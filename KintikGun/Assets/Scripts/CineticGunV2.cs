@@ -71,7 +71,6 @@ public class CineticGunV2 : MonoBehaviour {
 
 	public BlockAlreadyMovingV2 blockLock;
 	public Vector3 blockLockDistanceBase = new Vector3(0,0,0);
-	public GameObject[] myDirectionGo = new GameObject[2];
 
 	GameObject lastParticuleAspiration;
 	GameObject lastParticuleAspirationGive;
@@ -104,15 +103,6 @@ public class CineticGunV2 : MonoBehaviour {
 		Gun_Unlock_Event = FMODUnity.RuntimeManager.CreateInstance (Gun_Unlock);
 		Gun_Max_Energie_Event = FMODUnity.RuntimeManager.CreateInstance (Gun_Max_Energie);
 		Gun_Min_Energie_Event = FMODUnity.RuntimeManager.CreateInstance (Gun_Min_Energie);
-
-		myDirectionGo[0] = (GameObject)Instantiate(myGameObbject);
-		myDirectionGo [0].transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
-		myDirectionGo[1] = (GameObject)Instantiate(myGameObbject);
-		myDirectionGo [1].transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z+1);
-		myDirectionGo [0].transform.parent = transform.GetChild (0).transform;
-		myDirectionGo [1].transform.parent = transform.GetChild (0).transform;
-
-
 	}
 	
 	void Update ()	{
@@ -137,7 +127,7 @@ public class CineticGunV2 : MonoBehaviour {
 			lastPlateformSeen = null;
 			if(lastParticuleDirection != null){
 				lastParticuleDirection.GetComponent<ParticleSystem>().Stop();
-				Destroy(lastParticuleDirection,6);
+				Destroy(lastParticuleDirection,4);
 			}
 		}else{
 			lastPlateformSeen = hita.collider.gameObject;
@@ -153,9 +143,9 @@ public class CineticGunV2 : MonoBehaviour {
 			if (Physics.Raycast (transform.position, Camera.main.transform.TransformDirection (Vector3.forward), out hit, Mathf.Infinity, myMask) &&  hit.collider.GetComponent<BlockAlreadyMovingV2>()  ) {
 				BlockAlreadyMovingV2 myBlock = hit.collider.GetComponent<BlockAlreadyMovingV2>();
 				Gun_Don_Direction_Event.start();
-				myBlock.direction = Vector3.Normalize( new Vector3 ( myDirectionGo [1].transform.position.x - myDirectionGo [0].transform.position.x,  myDirectionGo [1].transform.position.y - myDirectionGo [0].transform.position.y , myDirectionGo [1].transform.position.z - myDirectionGo [0].transform.position.z));
+				myBlock.direction = Camera.main.transform.forward; 
 				Debug.Log(lastParticuleDirection.name);
-				lastParticuleDirection.transform.LookAt(lastParticuleDirection.transform.position+myBlock.direction);					
+				lastParticuleDirection.transform.LookAt(myBlock.gameObject.transform.position+myBlock.direction);					
 				myBlock.ApplyTheVelocity();
 			}
 		} else {
@@ -168,8 +158,8 @@ public class CineticGunV2 : MonoBehaviour {
 			if (Physics.Raycast (transform.position, Camera.main.transform.TransformDirection (Vector3.forward), out hit, Mathf.Infinity, myMask) &&  hit.collider.GetComponent<BlockAlreadyMovingV2>()  ) {
 				BlockAlreadyMovingV2 myBlock = hit.collider.GetComponent<BlockAlreadyMovingV2>();
 				Gun_Don_Direction_Event.start();
-				myBlock.direction = Vector3.Normalize( new Vector3 ( myDirectionGo [0].transform.position.x-myDirectionGo [1].transform.position.x,  myDirectionGo [0].transform.position.y - myDirectionGo [1].transform.position.y,myDirectionGo [0].transform.position.z -  myDirectionGo [1].transform.position.z));
-				lastParticuleDirection.transform.LookAt(lastParticuleDirection.transform.position+myBlock.direction);	
+				myBlock.direction = -Camera.main.transform.forward ;
+				lastParticuleDirection.transform.LookAt(myBlock.gameObject.transform.position+myBlock.direction);	
 				
 				myBlock.ApplyTheVelocity();
 			}
