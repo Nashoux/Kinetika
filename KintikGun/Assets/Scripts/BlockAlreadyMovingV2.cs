@@ -51,7 +51,8 @@ public void ApplyTheVelocity(){
 				if (energie > maxEnergie / 2) {
 
 				}
-			} 
+			}
+		} 
 			if (!col.gameObject.GetComponent<CineticGunV2> () && col.gameObject.tag != "destructible") {
 				direction = col.contacts [0].normal.normalized;
 				Vector3 velocity = direction * Time.deltaTime * energie;
@@ -64,7 +65,7 @@ public void ApplyTheVelocity(){
 					direction = col.contacts [0].normal.normalized;
 				}
 			}
-		}
+		
 		ApplyTheVelocity();
 	}
 

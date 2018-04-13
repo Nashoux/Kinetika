@@ -172,7 +172,7 @@ using Random = UnityEngine.Random;
 			rb.useGravity = true;
 			rb.velocity = new Vector3(m_MoveDir.x+newVelocity.x, rb.velocity.y+newVelocity.y/100, m_MoveDir.z+newVelocity.z );
 		}
-
+/*
 		if(!dead){
 			Collider[] myObjectCollision = Physics.OverlapCapsule(transform.position+new Vector3(0,1f,0),transform.position+new Vector3(0,-0.5f,0), 0.5f) ;
 			Vector3[] myObjectPosition = new Vector3[myObjectCollision.Length]; 
@@ -212,7 +212,7 @@ using Random = UnityEngine.Random;
 			}
 		}
 		Debug.Log(dead);
-
+*/
 	}
         private void FixedUpdate(){
 		     m_MouseLook.UpdateCursorLock();
