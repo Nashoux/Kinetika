@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 1934272}
   - component: {fileID: 1934271}
   - component: {fileID: 1934270}
+  - component: {fileID: 1934274}
   m_Layer: 0
   m_Name: Box360 (1146)
   m_TagString: destructible
@@ -163,7 +164,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1934268}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -212,6 +213,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1934268}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1934274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1934268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &4756666 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100020, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -361,6 +375,7 @@ GameObject:
   - component: {fileID: 15350381}
   - component: {fileID: 15350380}
   - component: {fileID: 15350379}
+  - component: {fileID: 15350383}
   m_Layer: 0
   m_Name: Box360 (1214)
   m_TagString: destructible
@@ -403,7 +418,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 15350377}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -452,6 +467,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 15350377}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &15350383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 15350377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &16016117
 Prefab:
   m_ObjectHideFlags: 0
@@ -600,6 +628,7 @@ GameObject:
   - component: {fileID: 18473307}
   - component: {fileID: 18473306}
   - component: {fileID: 18473305}
+  - component: {fileID: 18473309}
   m_Layer: 0
   m_Name: Box360 (1156)
   m_TagString: destructible
@@ -642,7 +671,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 18473303}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -691,6 +720,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 18473303}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &18473309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18473303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &18835255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,6 +1102,7 @@ GameObject:
   - component: {fileID: 33669092}
   - component: {fileID: 33669091}
   - component: {fileID: 33669090}
+  - component: {fileID: 33669094}
   m_Layer: 0
   m_Name: Box360 (1190)
   m_TagString: destructible
@@ -1102,7 +1145,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 33669088}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -1151,6 +1194,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 33669088}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &33669094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 33669088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &33703845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1322,7 @@ GameObject:
   - component: {fileID: 45068995}
   - component: {fileID: 45068994}
   - component: {fileID: 45068993}
+  - component: {fileID: 45068997}
   m_Layer: 0
   m_Name: Box360 (1155)
   m_TagString: destructible
@@ -1308,7 +1365,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 45068991}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -1357,6 +1414,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 45068991}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &45068997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 45068991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &49899552
 Prefab:
   m_ObjectHideFlags: 0
@@ -1750,6 +1820,7 @@ GameObject:
   - component: {fileID: 72693403}
   - component: {fileID: 72693402}
   - component: {fileID: 72693401}
+  - component: {fileID: 72693405}
   m_Layer: 0
   m_Name: Box360 (1180)
   m_TagString: destructible
@@ -1792,7 +1863,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 72693399}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -1841,6 +1912,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 72693399}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &72693405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 72693399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &75466398 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100020, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -1974,6 +2058,7 @@ GameObject:
   - component: {fileID: 96870851}
   - component: {fileID: 96870850}
   - component: {fileID: 96870849}
+  - component: {fileID: 96870853}
   m_Layer: 0
   m_Name: Box360 (1221)
   m_TagString: destructible
@@ -2016,7 +2101,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 96870847}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -2065,6 +2150,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 96870847}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &96870853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96870847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &96892016 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -2619,6 +2717,7 @@ GameObject:
   - component: {fileID: 130064065}
   - component: {fileID: 130064064}
   - component: {fileID: 130064063}
+  - component: {fileID: 130064067}
   m_Layer: 0
   m_Name: Box360 (1159)
   m_TagString: destructible
@@ -2661,7 +2760,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 130064061}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -2710,6 +2809,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 130064061}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &130064067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130064061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &132817779
 Prefab:
   m_ObjectHideFlags: 0
@@ -3090,6 +3202,7 @@ GameObject:
   - component: {fileID: 162837228}
   - component: {fileID: 162837227}
   - component: {fileID: 162837226}
+  - component: {fileID: 162837230}
   m_Layer: 0
   m_Name: Box360 (1182)
   m_TagString: destructible
@@ -3132,7 +3245,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 162837224}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -3181,6 +3294,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 162837224}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &162837230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162837224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &165084085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3194,6 +3320,7 @@ GameObject:
   - component: {fileID: 165084089}
   - component: {fileID: 165084088}
   - component: {fileID: 165084087}
+  - component: {fileID: 165084091}
   m_Layer: 0
   m_Name: Box360 (1220)
   m_TagString: destructible
@@ -3236,7 +3363,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 165084085}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -3285,6 +3412,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 165084085}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &165084091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 165084085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &166862269
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,6 +4085,7 @@ GameObject:
   - component: {fileID: 201351749}
   - component: {fileID: 201351748}
   - component: {fileID: 201351747}
+  - component: {fileID: 201351751}
   m_Layer: 0
   m_Name: Box360 (1228)
   m_TagString: destructible
@@ -3987,7 +4128,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 201351745}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -4036,6 +4177,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 201351745}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &201351751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 201351745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &201662516
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,6 +4375,7 @@ GameObject:
   - component: {fileID: 209514097}
   - component: {fileID: 209514096}
   - component: {fileID: 209514095}
+  - component: {fileID: 209514099}
   m_Layer: 0
   m_Name: Box360 (1176)
   m_TagString: destructible
@@ -4263,7 +4418,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 209514093}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -4312,6 +4467,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 209514093}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &209514099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209514093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &210498214
 GameObject:
   m_ObjectHideFlags: 0
@@ -4325,6 +4493,7 @@ GameObject:
   - component: {fileID: 210498218}
   - component: {fileID: 210498217}
   - component: {fileID: 210498216}
+  - component: {fileID: 210498220}
   m_Layer: 0
   m_Name: Box360 (1184)
   m_TagString: destructible
@@ -4367,7 +4536,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 210498214}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -4416,6 +4585,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 210498214}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &210498220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210498214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &213319780
 GameObject:
   m_ObjectHideFlags: 0
@@ -4429,6 +4611,7 @@ GameObject:
   - component: {fileID: 213319784}
   - component: {fileID: 213319783}
   - component: {fileID: 213319782}
+  - component: {fileID: 213319786}
   m_Layer: 0
   m_Name: Box360 (1231)
   m_TagString: destructible
@@ -4471,7 +4654,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 213319780}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -4520,6 +4703,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 213319780}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &213319786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 213319780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &216064056 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 85b85c5e0416f834a89ce4f3b9c06a58, type: 3}
@@ -5038,6 +5234,7 @@ GameObject:
   - component: {fileID: 235667318}
   - component: {fileID: 235667317}
   - component: {fileID: 235667316}
+  - component: {fileID: 235667320}
   m_Layer: 0
   m_Name: Box360 (1194)
   m_TagString: destructible
@@ -5080,7 +5277,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 235667314}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -5129,6 +5326,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 235667314}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &235667320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235667314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &237918624
 GameObject:
   m_ObjectHideFlags: 0
@@ -5266,6 +5476,7 @@ GameObject:
   - component: {fileID: 242002468}
   - component: {fileID: 242002467}
   - component: {fileID: 242002466}
+  - component: {fileID: 242002470}
   m_Layer: 0
   m_Name: Box360 (1160)
   m_TagString: destructible
@@ -5308,7 +5519,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 242002464}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -5357,6 +5568,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 242002464}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &242002470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242002464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &242292117 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5489e524ebfdbbd4cbe41c26624b98d2, type: 3}
@@ -5714,6 +5938,7 @@ GameObject:
   - component: {fileID: 248984219}
   - component: {fileID: 248984218}
   - component: {fileID: 248984217}
+  - component: {fileID: 248984221}
   m_Layer: 0
   m_Name: Box360 (1196)
   m_TagString: destructible
@@ -5756,7 +5981,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 248984215}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -5805,6 +6030,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 248984215}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &248984221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248984215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &250026621
 GameObject:
   m_ObjectHideFlags: 0
@@ -6078,6 +6316,7 @@ GameObject:
   - component: {fileID: 266782864}
   - component: {fileID: 266782863}
   - component: {fileID: 266782862}
+  - component: {fileID: 266782866}
   m_Layer: 0
   m_Name: Box360 (1147)
   m_TagString: destructible
@@ -6120,7 +6359,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 266782860}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -6169,6 +6408,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 266782860}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &266782866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 266782860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &269781854
 Prefab:
   m_ObjectHideFlags: 0
@@ -6595,6 +6847,7 @@ GameObject:
   - component: {fileID: 284147943}
   - component: {fileID: 284147942}
   - component: {fileID: 284147941}
+  - component: {fileID: 284147945}
   m_Layer: 0
   m_Name: Box360 (1172)
   m_TagString: destructible
@@ -6637,7 +6890,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 284147939}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -6686,6 +6939,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 284147939}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &284147945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284147939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &296679587 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100014, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -7016,6 +7282,7 @@ GameObject:
   - component: {fileID: 324330877}
   - component: {fileID: 324330876}
   - component: {fileID: 324330875}
+  - component: {fileID: 324330879}
   m_Layer: 0
   m_Name: Box360 (1215)
   m_TagString: destructible
@@ -7058,7 +7325,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 324330873}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -7107,6 +7374,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 324330873}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &324330879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324330873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &326191806 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -7138,6 +7418,7 @@ GameObject:
   - component: {fileID: 326500333}
   - component: {fileID: 326500332}
   - component: {fileID: 326500331}
+  - component: {fileID: 326500335}
   m_Layer: 0
   m_Name: Box360 (1188)
   m_TagString: destructible
@@ -7180,7 +7461,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 326500329}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -7229,6 +7510,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 326500329}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &326500335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 326500329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &336479303 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c96ff9da69869e84eb0a0ba67f2fbc36, type: 3}
@@ -7350,6 +7644,7 @@ GameObject:
   - component: {fileID: 337792448}
   - component: {fileID: 337792447}
   - component: {fileID: 337792446}
+  - component: {fileID: 337792450}
   m_Layer: 0
   m_Name: Box360 (1229)
   m_TagString: destructible
@@ -7392,7 +7687,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 337792444}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -7441,6 +7736,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 337792444}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &337792450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 337792444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!4 &345936139 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -7458,6 +7766,7 @@ GameObject:
   - component: {fileID: 346224906}
   - component: {fileID: 346224905}
   - component: {fileID: 346224904}
+  - component: {fileID: 346224908}
   m_Layer: 0
   m_Name: Box360 (1141)
   m_TagString: destructible
@@ -7500,7 +7809,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 346224902}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -7549,6 +7858,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 346224902}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &346224908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 346224902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &346363019 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100018, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -7580,6 +7902,7 @@ GameObject:
   - component: {fileID: 346582816}
   - component: {fileID: 346582815}
   - component: {fileID: 346582814}
+  - component: {fileID: 346582818}
   m_Layer: 0
   m_Name: Box360 (1197)
   m_TagString: destructible
@@ -7622,7 +7945,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 346582812}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -7671,6 +7994,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 346582812}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &346582818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 346582812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &350357528
 GameObject:
   m_ObjectHideFlags: 0
@@ -7684,6 +8020,7 @@ GameObject:
   - component: {fileID: 350357532}
   - component: {fileID: 350357531}
   - component: {fileID: 350357530}
+  - component: {fileID: 350357534}
   m_Layer: 0
   m_Name: Box360 (1212)
   m_TagString: destructible
@@ -7726,7 +8063,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 350357528}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -7775,6 +8112,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 350357528}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &350357534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 350357528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &354709678
 Prefab:
   m_ObjectHideFlags: 0
@@ -8045,6 +8395,7 @@ GameObject:
   - component: {fileID: 379455313}
   - component: {fileID: 379455312}
   - component: {fileID: 379455311}
+  - component: {fileID: 379455315}
   m_Layer: 0
   m_Name: Box360 (1136)
   m_TagString: destructible
@@ -8087,7 +8438,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 379455309}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -8136,6 +8487,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 379455309}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &379455315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 379455309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &381912239
 GameObject:
   m_ObjectHideFlags: 0
@@ -8149,6 +8513,7 @@ GameObject:
   - component: {fileID: 381912243}
   - component: {fileID: 381912242}
   - component: {fileID: 381912241}
+  - component: {fileID: 381912245}
   m_Layer: 0
   m_Name: Box360 (1148)
   m_TagString: destructible
@@ -8191,7 +8556,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 381912239}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -8240,6 +8605,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 381912239}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &381912245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 381912239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &382998609
 GameObject:
   m_ObjectHideFlags: 0
@@ -8763,6 +9141,7 @@ GameObject:
   - component: {fileID: 394393474}
   - component: {fileID: 394393473}
   - component: {fileID: 394393472}
+  - component: {fileID: 394393476}
   m_Layer: 0
   m_Name: Box360 (1232)
   m_TagString: destructible
@@ -8805,7 +9184,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 394393470}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -8854,6 +9233,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 394393470}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &394393476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 394393470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!4 &394869361 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -8871,6 +9263,7 @@ GameObject:
   - component: {fileID: 396175313}
   - component: {fileID: 396175312}
   - component: {fileID: 396175311}
+  - component: {fileID: 396175315}
   m_Layer: 0
   m_Name: Box360 (1158)
   m_TagString: destructible
@@ -8913,7 +9306,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 396175309}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -8962,6 +9355,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 396175309}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &396175315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 396175309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &398246132
 Prefab:
   m_ObjectHideFlags: 0
@@ -10089,6 +10495,7 @@ GameObject:
   - component: {fileID: 447879907}
   - component: {fileID: 447879906}
   - component: {fileID: 447879905}
+  - component: {fileID: 447879909}
   m_Layer: 0
   m_Name: Box360 (1142)
   m_TagString: destructible
@@ -10131,7 +10538,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 447879903}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -10180,6 +10587,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 447879903}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &447879909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447879903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &448417480 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -10931,6 +11351,7 @@ GameObject:
   - component: {fileID: 471324451}
   - component: {fileID: 471324450}
   - component: {fileID: 471324449}
+  - component: {fileID: 471324453}
   m_Layer: 0
   m_Name: Box360 (1168)
   m_TagString: destructible
@@ -10973,7 +11394,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 471324447}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -11022,6 +11443,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 471324447}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &471324453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 471324447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &476478478 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100012, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -11777,6 +12211,7 @@ GameObject:
   - component: {fileID: 498547133}
   - component: {fileID: 498547132}
   - component: {fileID: 498547131}
+  - component: {fileID: 498547135}
   m_Layer: 0
   m_Name: Box360 (1179)
   m_TagString: destructible
@@ -11819,7 +12254,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 498547129}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -11868,6 +12303,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 498547129}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &498547135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498547129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &499545667
 GameObject:
   m_ObjectHideFlags: 0
@@ -11881,6 +12329,7 @@ GameObject:
   - component: {fileID: 499545671}
   - component: {fileID: 499545670}
   - component: {fileID: 499545669}
+  - component: {fileID: 499545673}
   m_Layer: 0
   m_Name: Box360 (1133)
   m_TagString: destructible
@@ -11923,7 +12372,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 499545667}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -11972,6 +12421,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 499545667}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &499545673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499545667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &506501796
 GameObject:
   m_ObjectHideFlags: 0
@@ -11985,6 +12447,7 @@ GameObject:
   - component: {fileID: 506501800}
   - component: {fileID: 506501799}
   - component: {fileID: 506501798}
+  - component: {fileID: 506501802}
   m_Layer: 0
   m_Name: Box360 (1200)
   m_TagString: destructible
@@ -12027,7 +12490,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 506501796}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -12076,6 +12539,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 506501796}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &506501802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 506501796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &507188701
 GameObject:
   m_ObjectHideFlags: 0
@@ -12752,6 +13228,7 @@ GameObject:
   - component: {fileID: 547965140}
   - component: {fileID: 547965139}
   - component: {fileID: 547965138}
+  - component: {fileID: 547965142}
   m_Layer: 0
   m_Name: Box360 (1211)
   m_TagString: destructible
@@ -12794,7 +13271,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 547965136}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -12843,6 +13320,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 547965136}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &547965142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547965136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &556831598
 Prefab:
   m_ObjectHideFlags: 0
@@ -12926,6 +13416,7 @@ GameObject:
   - component: {fileID: 556832086}
   - component: {fileID: 556832085}
   - component: {fileID: 556832084}
+  - component: {fileID: 556832088}
   m_Layer: 0
   m_Name: Box360 (1177)
   m_TagString: destructible
@@ -12968,7 +13459,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 556832082}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -13017,6 +13508,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 556832082}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &556832088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556832082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &562385551 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -13512,6 +14016,7 @@ GameObject:
   - component: {fileID: 590208525}
   - component: {fileID: 590208524}
   - component: {fileID: 590208523}
+  - component: {fileID: 590208527}
   m_Layer: 0
   m_Name: Box360 (1152)
   m_TagString: destructible
@@ -13554,7 +14059,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 590208521}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -13603,6 +14108,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 590208521}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &590208527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 590208521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &596306468
 GameObject:
   m_ObjectHideFlags: 0
@@ -14097,6 +14615,7 @@ GameObject:
   - component: {fileID: 621596427}
   - component: {fileID: 621596426}
   - component: {fileID: 621596425}
+  - component: {fileID: 621596429}
   m_Layer: 0
   m_Name: Box360 (1219)
   m_TagString: destructible
@@ -14139,7 +14658,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 621596423}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -14188,6 +14707,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 621596423}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &621596429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621596423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &633837448 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100018, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -14866,6 +15398,7 @@ GameObject:
   - component: {fileID: 679243684}
   - component: {fileID: 679243683}
   - component: {fileID: 679243682}
+  - component: {fileID: 679243686}
   m_Layer: 0
   m_Name: Box360 (1131)
   m_TagString: destructible
@@ -14908,7 +15441,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 679243680}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -14957,6 +15490,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 679243680}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &679243686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 679243680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &681731242
 GameObject:
   m_ObjectHideFlags: 0
@@ -14970,6 +15516,7 @@ GameObject:
   - component: {fileID: 681731246}
   - component: {fileID: 681731245}
   - component: {fileID: 681731244}
+  - component: {fileID: 681731248}
   m_Layer: 0
   m_Name: Box360 (1175)
   m_TagString: destructible
@@ -15012,7 +15559,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681731242}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -15061,6 +15608,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681731242}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &681731248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 681731242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &681766951
 GameObject:
   m_ObjectHideFlags: 0
@@ -15174,6 +15734,7 @@ GameObject:
   - component: {fileID: 687753019}
   - component: {fileID: 687753018}
   - component: {fileID: 687753017}
+  - component: {fileID: 687753021}
   m_Layer: 0
   m_Name: Box360 (1201)
   m_TagString: destructible
@@ -15216,7 +15777,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687753015}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -15265,6 +15826,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687753015}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &687753021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687753015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &688629011
 Prefab:
   m_ObjectHideFlags: 0
@@ -15876,6 +16450,7 @@ GameObject:
   - component: {fileID: 727080459}
   - component: {fileID: 727080458}
   - component: {fileID: 727080457}
+  - component: {fileID: 727080461}
   m_Layer: 0
   m_Name: Box360 (1205)
   m_TagString: destructible
@@ -15918,7 +16493,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 727080455}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -15967,6 +16542,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 727080455}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &727080461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 727080455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &731861670
 GameObject:
   m_ObjectHideFlags: 0
@@ -16201,6 +16789,7 @@ GameObject:
   - component: {fileID: 735273316}
   - component: {fileID: 735273315}
   - component: {fileID: 735273314}
+  - component: {fileID: 735273318}
   m_Layer: 0
   m_Name: Box360 (1171)
   m_TagString: destructible
@@ -16243,7 +16832,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 735273312}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -16292,6 +16881,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 735273312}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &735273318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735273312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &739995931
 Prefab:
   m_ObjectHideFlags: 0
@@ -16375,6 +16977,7 @@ GameObject:
   - component: {fileID: 746548640}
   - component: {fileID: 746548639}
   - component: {fileID: 746548638}
+  - component: {fileID: 746548642}
   m_Layer: 0
   m_Name: Box360 (1167)
   m_TagString: destructible
@@ -16417,7 +17020,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 746548636}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -16466,6 +17069,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 746548636}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &746548642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 746548636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &755867228
 Prefab:
   m_ObjectHideFlags: 0
@@ -17261,6 +17877,7 @@ GameObject:
   - component: {fileID: 809355779}
   - component: {fileID: 809355778}
   - component: {fileID: 809355777}
+  - component: {fileID: 809355781}
   m_Layer: 0
   m_Name: Box360 (1185)
   m_TagString: destructible
@@ -17303,7 +17920,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 809355775}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -17352,6 +17969,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 809355775}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &809355781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 809355775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &809811131
 Prefab:
   m_ObjectHideFlags: 0
@@ -17576,6 +18206,7 @@ GameObject:
   - component: {fileID: 826380674}
   - component: {fileID: 826380673}
   - component: {fileID: 826380672}
+  - component: {fileID: 826380676}
   m_Layer: 0
   m_Name: Box360 (1202)
   m_TagString: destructible
@@ -17618,7 +18249,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 826380670}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -17667,6 +18298,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 826380670}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &826380676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826380670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &829096388
 GameObject:
   m_ObjectHideFlags: 0
@@ -17853,6 +18497,7 @@ GameObject:
   - component: {fileID: 833032260}
   - component: {fileID: 833032259}
   - component: {fileID: 833032258}
+  - component: {fileID: 833032262}
   m_Layer: 0
   m_Name: Box360 (1163)
   m_TagString: destructible
@@ -17895,7 +18540,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833032256}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -17944,6 +18589,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833032256}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &833032262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 833032256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &834202389
 GameObject:
   m_ObjectHideFlags: 0
@@ -17957,6 +18615,7 @@ GameObject:
   - component: {fileID: 834202393}
   - component: {fileID: 834202392}
   - component: {fileID: 834202391}
+  - component: {fileID: 834202395}
   m_Layer: 0
   m_Name: Box360 (1178)
   m_TagString: destructible
@@ -17999,7 +18658,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 834202389}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -18048,6 +18707,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 834202389}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &834202395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834202389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &836913145 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5ccb36f4ce68acf4a9a88a1fa0d5fc15, type: 3}
@@ -18083,6 +18755,7 @@ GameObject:
   - component: {fileID: 839368294}
   - component: {fileID: 839368293}
   - component: {fileID: 839368292}
+  - component: {fileID: 839368296}
   m_Layer: 0
   m_Name: Box360 (1150)
   m_TagString: destructible
@@ -18125,7 +18798,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 839368290}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -18174,6 +18847,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 839368290}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &839368296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839368290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &840767145
 GameObject:
   m_ObjectHideFlags: 0
@@ -18613,6 +19299,7 @@ GameObject:
   - component: {fileID: 853856058}
   - component: {fileID: 853856057}
   - component: {fileID: 853856056}
+  - component: {fileID: 853856060}
   m_Layer: 0
   m_Name: Box360 (1207)
   m_TagString: destructible
@@ -18655,7 +19342,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 853856054}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -18704,6 +19391,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 853856054}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &853856060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 853856054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &859745898
 GameObject:
   m_ObjectHideFlags: 0
@@ -19650,7 +20350,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
+  m_Convex: 1
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: cf70d441e558f18479a11d0d0720cfff, type: 3}
@@ -20092,6 +20792,7 @@ GameObject:
   - component: {fileID: 939583369}
   - component: {fileID: 939583368}
   - component: {fileID: 939583367}
+  - component: {fileID: 939583371}
   m_Layer: 0
   m_Name: Box360 (1227)
   m_TagString: destructible
@@ -20134,7 +20835,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 939583365}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -20183,6 +20884,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 939583365}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &939583371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939583365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &941121603 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 85b85c5e0416f834a89ce4f3b9c06a58, type: 3}
@@ -20338,6 +21052,7 @@ GameObject:
   - component: {fileID: 956531749}
   - component: {fileID: 956531748}
   - component: {fileID: 956531747}
+  - component: {fileID: 956531751}
   m_Layer: 0
   m_Name: Box360 (1237)
   m_TagString: destructible
@@ -20380,7 +21095,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 956531745}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -20429,6 +21144,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 956531745}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &956531751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 956531745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &961089190
 GameObject:
   m_ObjectHideFlags: 0
@@ -20442,6 +21170,7 @@ GameObject:
   - component: {fileID: 961089194}
   - component: {fileID: 961089193}
   - component: {fileID: 961089192}
+  - component: {fileID: 961089196}
   m_Layer: 0
   m_Name: Box360 (1166)
   m_TagString: destructible
@@ -20484,7 +21213,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 961089190}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -20533,6 +21262,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 961089190}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &961089196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 961089190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &962130392
 Prefab:
   m_ObjectHideFlags: 0
@@ -22136,6 +22878,7 @@ GameObject:
   - component: {fileID: 1052248885}
   - component: {fileID: 1052248884}
   - component: {fileID: 1052248883}
+  - component: {fileID: 1052248887}
   m_Layer: 0
   m_Name: Box360 (1189)
   m_TagString: destructible
@@ -22178,7 +22921,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1052248881}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -22227,6 +22970,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1052248881}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1052248887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1052248881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1054329409
 GameObject:
   m_ObjectHideFlags: 0
@@ -23173,6 +23929,7 @@ GameObject:
   - component: {fileID: 1089078512}
   - component: {fileID: 1089078511}
   - component: {fileID: 1089078510}
+  - component: {fileID: 1089078514}
   m_Layer: 0
   m_Name: Box360 (1162)
   m_TagString: destructible
@@ -23215,7 +23972,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1089078508}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -23264,6 +24021,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1089078508}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1089078514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1089078508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1089377776 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -23295,6 +24065,7 @@ GameObject:
   - component: {fileID: 1096018928}
   - component: {fileID: 1096018927}
   - component: {fileID: 1096018926}
+  - component: {fileID: 1096018930}
   m_Layer: 0
   m_Name: Box360 (1187)
   m_TagString: destructible
@@ -23337,7 +24108,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1096018924}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -23386,6 +24157,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1096018924}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1096018930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1096018924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &1097911313
 Prefab:
   m_ObjectHideFlags: 0
@@ -23711,6 +24495,7 @@ GameObject:
   - component: {fileID: 1112546603}
   - component: {fileID: 1112546602}
   - component: {fileID: 1112546601}
+  - component: {fileID: 1112546605}
   m_Layer: 0
   m_Name: Box360 (1230)
   m_TagString: destructible
@@ -23753,7 +24538,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1112546599}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -23802,6 +24587,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1112546599}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1112546605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112546599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1117112381 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c96ff9da69869e84eb0a0ba67f2fbc36, type: 3}
@@ -24920,6 +25718,7 @@ GameObject:
   - component: {fileID: 1156454948}
   - component: {fileID: 1156454947}
   - component: {fileID: 1156454946}
+  - component: {fileID: 1156454950}
   m_Layer: 0
   m_Name: Box360 (1165)
   m_TagString: destructible
@@ -24962,7 +25761,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1156454944}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -25011,6 +25810,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1156454944}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1156454950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156454944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1159356583 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 85b85c5e0416f834a89ce4f3b9c06a58, type: 3}
@@ -25283,6 +26095,7 @@ GameObject:
   - component: {fileID: 1168729829}
   - component: {fileID: 1168729828}
   - component: {fileID: 1168729827}
+  - component: {fileID: 1168729831}
   m_Layer: 0
   m_Name: Box360 (1145)
   m_TagString: destructible
@@ -25325,7 +26138,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1168729825}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -25374,6 +26187,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1168729825}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1168729831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1168729825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1179503748 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100014, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -26566,6 +27392,7 @@ GameObject:
   - component: {fileID: 1264734551}
   - component: {fileID: 1264734550}
   - component: {fileID: 1264734549}
+  - component: {fileID: 1264734553}
   m_Layer: 0
   m_Name: Box360 (1206)
   m_TagString: destructible
@@ -26608,7 +27435,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1264734547}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -26657,6 +27484,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1264734547}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1264734553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1264734547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1273618066 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100018, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -26920,6 +27760,7 @@ GameObject:
   - component: {fileID: 1286343519}
   - component: {fileID: 1286343518}
   - component: {fileID: 1286343517}
+  - component: {fileID: 1286343521}
   m_Layer: 0
   m_Name: Box360 (1223)
   m_TagString: destructible
@@ -26962,7 +27803,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1286343515}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -27011,6 +27852,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1286343515}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1286343521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1286343515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1287172938
 GameObject:
   m_ObjectHideFlags: 0
@@ -27434,6 +28288,7 @@ GameObject:
   - component: {fileID: 1312120342}
   - component: {fileID: 1312120341}
   - component: {fileID: 1312120340}
+  - component: {fileID: 1312120344}
   m_Layer: 0
   m_Name: Box360 (1198)
   m_TagString: destructible
@@ -27476,7 +28331,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1312120338}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -27525,6 +28380,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1312120338}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1312120344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1312120338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1312334348
 GameObject:
   m_ObjectHideFlags: 0
@@ -27755,6 +28623,7 @@ GameObject:
   - component: {fileID: 1319281309}
   - component: {fileID: 1319281308}
   - component: {fileID: 1319281307}
+  - component: {fileID: 1319281311}
   m_Layer: 0
   m_Name: Box360 (1186)
   m_TagString: destructible
@@ -27797,7 +28666,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1319281305}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -27846,6 +28715,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1319281305}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1319281311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319281305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1320875118
 GameObject:
   m_ObjectHideFlags: 0
@@ -28165,7 +29047,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1331921044}
   m_LocalRotation: {x: -0, y: -0.4430764, z: -0, w: 0.8964839}
-  m_LocalPosition: {x: -32.4, y: 50.36, z: -270.1}
+  m_LocalPosition: {x: -90.82, y: 96.18, z: -213.54}
   m_LocalScale: {x: 11.528696, y: 11.5287, z: 11.5287}
   m_Children: []
   m_Father: {fileID: 715335304}
@@ -28183,8 +29065,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxEnergie: 400
-  energie: 200
-  direction: {x: 0, y: 0, z: 0}
+  energie: 800
+  direction: {x: 0, y: -4, z: 0}
   rb: {fileID: 0}
   myMat: []
   _BoundsUp: 0
@@ -28199,7 +29081,7 @@ Rigidbody:
   m_Mass: 500
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -28290,6 +29172,7 @@ GameObject:
   - component: {fileID: 1338336267}
   - component: {fileID: 1338336266}
   - component: {fileID: 1338336265}
+  - component: {fileID: 1338336269}
   m_Layer: 0
   m_Name: Box360 (1144)
   m_TagString: destructible
@@ -28332,7 +29215,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1338336263}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -28381,6 +29264,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1338336263}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1338336269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1338336263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1341632194
 GameObject:
   m_ObjectHideFlags: 0
@@ -28674,20 +29570,6 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: cf70d441e558f18479a11d0d0720cfff, type: 3}
   m_PrefabInternal: {fileID: 132817779}
---- !u!64 &1351982016
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1351982014}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: cf70d441e558f18479a11d0d0720cfff, type: 3}
 --- !u!65 &1351982017
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28752,6 +29634,7 @@ GameObject:
   - component: {fileID: 1357081753}
   - component: {fileID: 1357081752}
   - component: {fileID: 1357081751}
+  - component: {fileID: 1357081755}
   m_Layer: 0
   m_Name: Box360 (1216)
   m_TagString: destructible
@@ -28794,7 +29677,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357081749}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -28843,6 +29726,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1357081749}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1357081755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357081749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1358410165 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 85b85c5e0416f834a89ce4f3b9c06a58, type: 3}
@@ -29266,6 +30162,7 @@ GameObject:
   - component: {fileID: 1381594196}
   - component: {fileID: 1381594195}
   - component: {fileID: 1381594194}
+  - component: {fileID: 1381594198}
   m_Layer: 0
   m_Name: Box360 (1183)
   m_TagString: destructible
@@ -29308,7 +30205,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1381594192}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -29357,6 +30254,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1381594192}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1381594198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1381594192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1387425753 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100016, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -29508,6 +30418,7 @@ GameObject:
   - component: {fileID: 1393087844}
   - component: {fileID: 1393087843}
   - component: {fileID: 1393087842}
+  - component: {fileID: 1393087846}
   m_Layer: 0
   m_Name: Box360 (1170)
   m_TagString: destructible
@@ -29550,7 +30461,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1393087840}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -29599,6 +30510,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1393087840}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1393087846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1393087840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1394621081
 GameObject:
   m_ObjectHideFlags: 0
@@ -29612,6 +30536,7 @@ GameObject:
   - component: {fileID: 1394621085}
   - component: {fileID: 1394621084}
   - component: {fileID: 1394621083}
+  - component: {fileID: 1394621087}
   m_Layer: 0
   m_Name: Box360 (1191)
   m_TagString: destructible
@@ -29654,7 +30579,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1394621081}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -29703,6 +30628,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1394621081}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1394621087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1394621081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!4 &1398326938 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c96ff9da69869e84eb0a0ba67f2fbc36, type: 3}
@@ -29720,6 +30658,7 @@ GameObject:
   - component: {fileID: 1400898928}
   - component: {fileID: 1400898927}
   - component: {fileID: 1400898926}
+  - component: {fileID: 1400898930}
   m_Layer: 0
   m_Name: Box360 (1135)
   m_TagString: destructible
@@ -29762,7 +30701,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400898924}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -29811,6 +30750,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400898924}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1400898930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1400898924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1409520555 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100016, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -31061,6 +32013,7 @@ GameObject:
   - component: {fileID: 1461248020}
   - component: {fileID: 1461248019}
   - component: {fileID: 1461248018}
+  - component: {fileID: 1461248022}
   m_Layer: 0
   m_Name: Box360 (1181)
   m_TagString: destructible
@@ -31103,7 +32056,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1461248016}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -31152,6 +32105,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1461248016}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1461248022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1461248016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &1463346966
 Prefab:
   m_ObjectHideFlags: 0
@@ -31711,6 +32677,7 @@ GameObject:
   - component: {fileID: 1491202870}
   - component: {fileID: 1491202869}
   - component: {fileID: 1491202868}
+  - component: {fileID: 1491202872}
   m_Layer: 0
   m_Name: Box360 (1208)
   m_TagString: destructible
@@ -31753,7 +32720,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1491202866}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -31802,6 +32769,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1491202866}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1491202872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1491202866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1492802572 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5545c92e1fbb4dd4d864c2c59d1f1e3c, type: 3}
@@ -31998,6 +32978,7 @@ GameObject:
   - component: {fileID: 1502392612}
   - component: {fileID: 1502392611}
   - component: {fileID: 1502392610}
+  - component: {fileID: 1502392614}
   m_Layer: 0
   m_Name: Box360 (1193)
   m_TagString: destructible
@@ -32040,7 +33021,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1502392608}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -32089,6 +33070,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1502392608}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1502392614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1502392608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &1507916311
 Prefab:
   m_ObjectHideFlags: 0
@@ -32184,6 +33178,7 @@ GameObject:
   - component: {fileID: 1510048961}
   - component: {fileID: 1510048960}
   - component: {fileID: 1510048959}
+  - component: {fileID: 1510048963}
   m_Layer: 0
   m_Name: Box360 (1233)
   m_TagString: destructible
@@ -32226,7 +33221,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1510048957}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -32275,6 +33270,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1510048957}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1510048963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1510048957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1511349084
 GameObject:
   m_ObjectHideFlags: 0
@@ -32567,6 +33575,7 @@ GameObject:
   - component: {fileID: 1521037470}
   - component: {fileID: 1521037469}
   - component: {fileID: 1521037468}
+  - component: {fileID: 1521037472}
   m_Layer: 0
   m_Name: Box360 (1218)
   m_TagString: destructible
@@ -32609,7 +33618,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1521037466}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -32658,6 +33667,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1521037466}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1521037472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1521037466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1523010405 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -32689,6 +33711,7 @@ GameObject:
   - component: {fileID: 1532220510}
   - component: {fileID: 1532220509}
   - component: {fileID: 1532220508}
+  - component: {fileID: 1532220512}
   m_Layer: 0
   m_Name: Box360 (1149)
   m_TagString: destructible
@@ -32731,7 +33754,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1532220506}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -32780,6 +33803,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1532220506}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1532220512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1532220506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1532225605
 GameObject:
   m_ObjectHideFlags: 0
@@ -33050,6 +34086,7 @@ GameObject:
   - component: {fileID: 1550363293}
   - component: {fileID: 1550363292}
   - component: {fileID: 1550363291}
+  - component: {fileID: 1550363295}
   m_Layer: 0
   m_Name: Box360 (1151)
   m_TagString: destructible
@@ -33092,7 +34129,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1550363289}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -33141,6 +34178,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1550363289}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1550363295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550363289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &1555345455
 Prefab:
   m_ObjectHideFlags: 0
@@ -33362,6 +34412,7 @@ GameObject:
   - component: {fileID: 1556583038}
   - component: {fileID: 1556583037}
   - component: {fileID: 1556583036}
+  - component: {fileID: 1556583040}
   m_Layer: 0
   m_Name: Box360 (1209)
   m_TagString: destructible
@@ -33404,7 +34455,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1556583034}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -33453,6 +34504,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1556583034}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1556583040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1556583034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &1556949842
 Prefab:
   m_ObjectHideFlags: 0
@@ -33989,6 +35053,7 @@ GameObject:
   - component: {fileID: 1588908780}
   - component: {fileID: 1588908779}
   - component: {fileID: 1588908778}
+  - component: {fileID: 1588908782}
   m_Layer: 0
   m_Name: Box360 (1174)
   m_TagString: destructible
@@ -34031,7 +35096,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1588908776}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -34080,6 +35145,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1588908776}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1588908782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1588908776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1591416545
 GameObject:
   m_ObjectHideFlags: 0
@@ -34093,6 +35171,7 @@ GameObject:
   - component: {fileID: 1591416549}
   - component: {fileID: 1591416548}
   - component: {fileID: 1591416547}
+  - component: {fileID: 1591416551}
   m_Layer: 0
   m_Name: Box360 (1238)
   m_TagString: destructible
@@ -34135,7 +35214,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1591416545}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -34184,6 +35263,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1591416545}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1591416551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1591416545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1594619295
 GameObject:
   m_ObjectHideFlags: 0
@@ -34299,6 +35391,7 @@ GameObject:
   - component: {fileID: 1596870832}
   - component: {fileID: 1596870831}
   - component: {fileID: 1596870830}
+  - component: {fileID: 1596870834}
   m_Layer: 0
   m_Name: Box360 (1213)
   m_TagString: destructible
@@ -34341,7 +35434,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1596870828}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -34390,6 +35483,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1596870828}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1596870834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1596870828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &1598580587
 Prefab:
   m_ObjectHideFlags: 0
@@ -36406,6 +37512,7 @@ GameObject:
   - component: {fileID: 1726190225}
   - component: {fileID: 1726190224}
   - component: {fileID: 1726190223}
+  - component: {fileID: 1726190227}
   m_Layer: 0
   m_Name: Box360 (1164)
   m_TagString: destructible
@@ -36448,7 +37555,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1726190221}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -36497,6 +37604,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1726190221}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1726190227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726190221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1736148846 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c96ff9da69869e84eb0a0ba67f2fbc36, type: 3}
@@ -36784,6 +37904,7 @@ GameObject:
   - component: {fileID: 1752219118}
   - component: {fileID: 1752219117}
   - component: {fileID: 1752219116}
+  - component: {fileID: 1752219120}
   m_Layer: 0
   m_Name: Box360 (1203)
   m_TagString: destructible
@@ -36826,7 +37947,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1752219114}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -36875,6 +37996,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1752219114}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1752219120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1752219114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1754558338
 GameObject:
   m_ObjectHideFlags: 0
@@ -37008,6 +38142,7 @@ GameObject:
   - component: {fileID: 1758102991}
   - component: {fileID: 1758102990}
   - component: {fileID: 1758102989}
+  - component: {fileID: 1758102993}
   m_Layer: 0
   m_Name: Box360 (1134)
   m_TagString: destructible
@@ -37050,7 +38185,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1758102987}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -37099,6 +38234,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1758102987}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1758102993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1758102987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &1760446817
 Prefab:
   m_ObjectHideFlags: 0
@@ -37631,6 +38779,7 @@ GameObject:
   - component: {fileID: 1781201391}
   - component: {fileID: 1781201390}
   - component: {fileID: 1781201389}
+  - component: {fileID: 1781201393}
   m_Layer: 0
   m_Name: Box360 (1195)
   m_TagString: destructible
@@ -37673,7 +38822,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781201387}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -37722,6 +38871,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1781201387}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1781201393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781201387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1783113147 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100020, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -37753,6 +38915,7 @@ GameObject:
   - component: {fileID: 1783589784}
   - component: {fileID: 1783589783}
   - component: {fileID: 1783589782}
+  - component: {fileID: 1783589786}
   m_Layer: 0
   m_Name: Box360 (1157)
   m_TagString: destructible
@@ -37795,7 +38958,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1783589780}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -37844,6 +39007,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1783589780}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1783589786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1783589780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1790273932
 GameObject:
   m_ObjectHideFlags: 0
@@ -38137,7 +39313,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1803549796}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: -0.0000018626449}
-  m_LocalPosition: {x: 271.4, y: 149, z: -408.8}
+  m_LocalPosition: {x: 253.6, y: 160.8, z: -408.8}
   m_LocalScale: {x: 30.729982, y: 15.047425, z: 53.719208}
   m_Children:
   - {fileID: 679243681}
@@ -38727,6 +39903,7 @@ GameObject:
   - component: {fileID: 1829918993}
   - component: {fileID: 1829918992}
   - component: {fileID: 1829918991}
+  - component: {fileID: 1829918995}
   m_Layer: 0
   m_Name: Box360 (1222)
   m_TagString: destructible
@@ -38769,7 +39946,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1829918989}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -38818,6 +39995,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1829918989}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1829918995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1829918989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!4 &1831464706 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -38835,6 +40025,7 @@ GameObject:
   - component: {fileID: 1836095917}
   - component: {fileID: 1836095916}
   - component: {fileID: 1836095915}
+  - component: {fileID: 1836095919}
   m_Layer: 0
   m_Name: Box360 (1153)
   m_TagString: destructible
@@ -38877,7 +40068,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1836095913}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -38926,6 +40117,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1836095913}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1836095919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836095913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1838153556
 GameObject:
   m_ObjectHideFlags: 0
@@ -39136,6 +40340,7 @@ GameObject:
   - component: {fileID: 1843660090}
   - component: {fileID: 1843660089}
   - component: {fileID: 1843660088}
+  - component: {fileID: 1843660092}
   m_Layer: 0
   m_Name: Box360 (1236)
   m_TagString: destructible
@@ -39178,7 +40383,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1843660086}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -39227,6 +40432,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1843660086}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1843660092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1843660086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1848502288
 GameObject:
   m_ObjectHideFlags: 0
@@ -39618,6 +40836,7 @@ GameObject:
   - component: {fileID: 1859533229}
   - component: {fileID: 1859533228}
   - component: {fileID: 1859533227}
+  - component: {fileID: 1859533231}
   m_Layer: 0
   m_Name: Box360 (1217)
   m_TagString: destructible
@@ -39660,7 +40879,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1859533225}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -39709,6 +40928,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1859533225}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1859533231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1859533225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1861596470
 GameObject:
   m_ObjectHideFlags: 0
@@ -39763,6 +40995,7 @@ GameObject:
   - component: {fileID: 1861772048}
   - component: {fileID: 1861772047}
   - component: {fileID: 1861772046}
+  - component: {fileID: 1861772050}
   m_Layer: 0
   m_Name: Box360 (1192)
   m_TagString: destructible
@@ -39805,7 +41038,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1861772044}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -39854,6 +41087,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1861772044}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1861772050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1861772044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &1869099039
 Prefab:
   m_ObjectHideFlags: 0
@@ -40055,6 +41301,7 @@ GameObject:
   - component: {fileID: 1881359053}
   - component: {fileID: 1881359052}
   - component: {fileID: 1881359051}
+  - component: {fileID: 1881359055}
   m_Layer: 0
   m_Name: Box360 (1140)
   m_TagString: destructible
@@ -40097,7 +41344,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1881359049}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -40146,6 +41393,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1881359049}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1881359055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881359049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1894730055
 GameObject:
   m_ObjectHideFlags: 0
@@ -40704,6 +41964,7 @@ GameObject:
   - component: {fileID: 1908479970}
   - component: {fileID: 1908479969}
   - component: {fileID: 1908479968}
+  - component: {fileID: 1908479972}
   m_Layer: 0
   m_Name: Box360 (1210)
   m_TagString: destructible
@@ -40746,7 +42007,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1908479966}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -40795,6 +42056,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1908479966}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1908479972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1908479966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1909989715 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100016, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -40826,6 +42100,7 @@ GameObject:
   - component: {fileID: 1913780586}
   - component: {fileID: 1913780585}
   - component: {fileID: 1913780584}
+  - component: {fileID: 1913780588}
   m_Layer: 0
   m_Name: Box360 (1169)
   m_TagString: destructible
@@ -40868,7 +42143,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1913780582}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -40917,6 +42192,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1913780582}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1913780588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1913780582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1915581575
 GameObject:
   m_ObjectHideFlags: 0
@@ -41523,6 +42811,7 @@ GameObject:
   - component: {fileID: 1933765481}
   - component: {fileID: 1933765480}
   - component: {fileID: 1933765479}
+  - component: {fileID: 1933765483}
   m_Layer: 0
   m_Name: Box360 (1199)
   m_TagString: destructible
@@ -41565,7 +42854,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933765477}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -41614,6 +42903,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933765477}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1933765483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1933765477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1936549649
 GameObject:
   m_ObjectHideFlags: 0
@@ -41833,6 +43135,7 @@ GameObject:
   - component: {fileID: 1940911720}
   - component: {fileID: 1940911719}
   - component: {fileID: 1940911718}
+  - component: {fileID: 1940911722}
   m_Layer: 0
   m_Name: Box360 (1224)
   m_TagString: destructible
@@ -41875,7 +43178,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1940911716}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -41924,6 +43227,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1940911716}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1940911722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940911716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!4 &1946468582 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c96ff9da69869e84eb0a0ba67f2fbc36, type: 3}
@@ -42163,6 +43479,7 @@ GameObject:
   - component: {fileID: 1960917455}
   - component: {fileID: 1960917454}
   - component: {fileID: 1960917453}
+  - component: {fileID: 1960917457}
   m_Layer: 0
   m_Name: Box360 (1161)
   m_TagString: destructible
@@ -42205,7 +43522,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1960917451}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -42254,6 +43571,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1960917451}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1960917457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1960917451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1974229509 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1932559369776958, guid: 01faec03d3f540145bbc801e0ca4a64f,
@@ -42291,6 +43621,7 @@ GameObject:
   - component: {fileID: 1975915437}
   - component: {fileID: 1975915436}
   - component: {fileID: 1975915435}
+  - component: {fileID: 1975915439}
   m_Layer: 0
   m_Name: Box360 (1139)
   m_TagString: destructible
@@ -42333,7 +43664,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1975915433}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -42382,6 +43713,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1975915433}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1975915439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975915433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1988261246 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -42531,7 +43875,7 @@ MeshFilter:
 --- !u!1 &1994287067
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1799440868292632, guid: d2caa9602475a594d9c1bca30ce95164,
+  m_PrefabParentObject: {fileID: 1529129018330078, guid: 2c709074cf58f3147814168964238552,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
@@ -42541,6 +43885,7 @@ GameObject:
   - component: {fileID: 1994287071}
   - component: {fileID: 1994287070}
   - component: {fileID: 1994287069}
+  - component: {fileID: 1994287073}
   m_Layer: 0
   m_Name: Box360 (1143)
   m_TagString: destructible
@@ -42551,7 +43896,7 @@ GameObject:
 --- !u!4 &1994287068
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4432382135379406, guid: d2caa9602475a594d9c1bca30ce95164,
+  m_PrefabParentObject: {fileID: 4894036679757122, guid: 2c709074cf58f3147814168964238552,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1994287067}
@@ -42565,7 +43910,7 @@ Transform:
 --- !u!65 &1994287069
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 65533820232405884, guid: d2caa9602475a594d9c1bca30ce95164,
+  m_PrefabParentObject: {fileID: 65582529491794840, guid: 2c709074cf58f3147814168964238552,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1994287067}
@@ -42578,15 +43923,14 @@ BoxCollider:
 --- !u!54 &1994287070
 Rigidbody:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 54991848669701858, guid: d2caa9602475a594d9c1bca30ce95164,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1994287067}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -42594,7 +43938,7 @@ Rigidbody:
 --- !u!23 &1994287071
 MeshRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 23289232064792624, guid: d2caa9602475a594d9c1bca30ce95164,
+  m_PrefabParentObject: {fileID: 23636153101358114, guid: 2c709074cf58f3147814168964238552,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1994287067}
@@ -42627,11 +43971,25 @@ MeshRenderer:
 --- !u!33 &1994287072
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 33079728057591962, guid: d2caa9602475a594d9c1bca30ce95164,
+  m_PrefabParentObject: {fileID: 33143423871269340, guid: 2c709074cf58f3147814168964238552,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1994287067}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &1994287073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114479459777671222, guid: 2c709074cf58f3147814168964238552,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1994287067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &1996338815 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5545c92e1fbb4dd4d864c2c59d1f1e3c, type: 3}
@@ -42970,6 +44328,7 @@ GameObject:
   - component: {fileID: 2037139510}
   - component: {fileID: 2037139509}
   - component: {fileID: 2037139508}
+  - component: {fileID: 2037139512}
   m_Layer: 0
   m_Name: Box360 (1235)
   m_TagString: destructible
@@ -43012,7 +44371,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2037139506}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -43061,6 +44420,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2037139506}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &2037139512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2037139506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &2037217429 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c96ff9da69869e84eb0a0ba67f2fbc36, type: 3}
@@ -43713,6 +45085,7 @@ GameObject:
   - component: {fileID: 2063301771}
   - component: {fileID: 2063301770}
   - component: {fileID: 2063301769}
+  - component: {fileID: 2063301773}
   m_Layer: 0
   m_Name: Box360 (1226)
   m_TagString: destructible
@@ -43755,7 +45128,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2063301767}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -43804,6 +45177,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2063301767}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &2063301773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2063301767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &2064336489
 GameObject:
   m_ObjectHideFlags: 0
@@ -43817,6 +45203,7 @@ GameObject:
   - component: {fileID: 2064336493}
   - component: {fileID: 2064336492}
   - component: {fileID: 2064336491}
+  - component: {fileID: 2064336495}
   m_Layer: 0
   m_Name: Box360 (1173)
   m_TagString: destructible
@@ -43859,7 +45246,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2064336489}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -43908,6 +45295,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2064336489}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &2064336495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2064336489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &2064482841 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c96ff9da69869e84eb0a0ba67f2fbc36, type: 3}
@@ -44065,6 +45465,7 @@ GameObject:
   - component: {fileID: 2072297181}
   - component: {fileID: 2072297180}
   - component: {fileID: 2072297179}
+  - component: {fileID: 2072297183}
   m_Layer: 0
   m_Name: Box360 (1132)
   m_TagString: destructible
@@ -44107,7 +45508,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2072297177}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -44156,6 +45557,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2072297177}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &2072297183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2072297177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!4 &2073068109 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
@@ -44279,6 +45693,7 @@ GameObject:
   - component: {fileID: 2083688909}
   - component: {fileID: 2083688908}
   - component: {fileID: 2083688907}
+  - component: {fileID: 2083688911}
   m_Layer: 0
   m_Name: Box360 (1225)
   m_TagString: destructible
@@ -44321,7 +45736,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2083688905}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -44370,6 +45785,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2083688905}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &2083688911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083688905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &2085414902 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c96ff9da69869e84eb0a0ba67f2fbc36, type: 3}
@@ -44519,6 +45947,7 @@ GameObject:
   - component: {fileID: 2093037338}
   - component: {fileID: 2093037337}
   - component: {fileID: 2093037336}
+  - component: {fileID: 2093037340}
   m_Layer: 0
   m_Name: Box360 (1137)
   m_TagString: destructible
@@ -44561,7 +45990,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2093037334}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -44610,6 +46039,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2093037334}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &2093037340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2093037334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &2094907658
 GameObject:
   m_ObjectHideFlags: 0
@@ -44725,6 +46167,7 @@ GameObject:
   - component: {fileID: 2096258668}
   - component: {fileID: 2096258667}
   - component: {fileID: 2096258666}
+  - component: {fileID: 2096258670}
   m_Layer: 0
   m_Name: Box360 (1154)
   m_TagString: destructible
@@ -44767,7 +46210,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2096258664}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -44816,6 +46259,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2096258664}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &2096258670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096258664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &2096713788
 GameObject:
   m_ObjectHideFlags: 0
@@ -44829,6 +46285,7 @@ GameObject:
   - component: {fileID: 2096713792}
   - component: {fileID: 2096713791}
   - component: {fileID: 2096713790}
+  - component: {fileID: 2096713794}
   m_Layer: 0
   m_Name: Box360 (1204)
   m_TagString: destructible
@@ -44871,7 +46328,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2096713788}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -44920,6 +46377,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2096713788}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &2096713794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096713788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1001 &2096791526
 Prefab:
   m_ObjectHideFlags: 0
@@ -45854,6 +47324,7 @@ GameObject:
   - component: {fileID: 2139502052}
   - component: {fileID: 2139502051}
   - component: {fileID: 2139502050}
+  - component: {fileID: 2139502054}
   m_Layer: 0
   m_Name: Box360 (1234)
   m_TagString: destructible
@@ -45896,7 +47367,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139502048}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -45945,6 +47416,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139502048}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &2139502054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2139502048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &2141756204
 GameObject:
   m_ObjectHideFlags: 0
@@ -45958,6 +47442,7 @@ GameObject:
   - component: {fileID: 2141756208}
   - component: {fileID: 2141756207}
   - component: {fileID: 2141756206}
+  - component: {fileID: 2141756210}
   m_Layer: 0
   m_Name: Box360 (1138)
   m_TagString: destructible
@@ -46000,7 +47485,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2141756204}
   serializedVersion: 2
-  m_Mass: 100000
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -46049,6 +47534,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2141756204}
   m_Mesh: {fileID: 4300718, guid: 8cd08cb6d7a4fc846a664c1e403eb416, type: 3}
+--- !u!114 &2141756210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2141756204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myGrav: 0
+  myMass: 0
 --- !u!1 &2142855232 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5489e524ebfdbbd4cbe41c26624b98d2, type: 3}
