@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BlockAlreadyMovingV2 : MonoBehaviour {
 
-
+public bool move = true;
 
 public float maxEnergie = 200;
 
@@ -29,7 +29,8 @@ void Start(){
 }
 
 public void ApplyTheVelocity(){
-	if (energie < 0f) {
+	if (move){
+		if (energie < 0f) {
 			energie = 0f;
 		}
 		float energieNew = energie / (maxEnergie*8);
@@ -42,6 +43,9 @@ public void ApplyTheVelocity(){
 		}	
 		Vector3 newVelocity = direction * Time.deltaTime * energie;
 		rb.velocity = newVelocity;
+	}else{
+		direction = Vector3.zero;
+	}
 }
 
 	void OnCollisionEnter(Collision col){

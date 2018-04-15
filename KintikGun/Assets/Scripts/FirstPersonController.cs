@@ -23,6 +23,7 @@ using Random = UnityEngine.Random;
 	FMOD.Studio.EventInstance jump_Down_Event;
 
 	[SerializeField] private float speed;
+	
     public MouseLook m_MouseLook;
 		
 	[SerializeField] float jumpSpeed = 120f;
