@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BlockAlreadyMovingV2 : MonoBehaviour {
 
-
+public bool move = true;
 
 public float maxEnergie = 200;
 
@@ -29,7 +29,8 @@ void Start(){
 }
 
 public void ApplyTheVelocity(){
-	if (energie < 0f) {
+	if (move){
+		if (energie < 0f) {
 			energie = 0f;
 		}
 		float energieNew = energie / (maxEnergie*8);
@@ -42,6 +43,9 @@ public void ApplyTheVelocity(){
 		}	
 		Vector3 newVelocity = direction * Time.deltaTime * energie;
 		rb.velocity = newVelocity;
+	}else{
+		direction = Vector3.zero;
+	}
 }
 
 	void OnCollisionEnter(Collision col){
@@ -51,7 +55,8 @@ public void ApplyTheVelocity(){
 				if (energie > maxEnergie / 2) {
 
 				}
-			} 
+			}
+		} 
 			if (!col.gameObject.GetComponent<CineticGunV2> () && col.gameObject.tag != "destructible") {
 				direction = col.contacts [0].normal.normalized;
 				Vector3 velocity = direction * Time.deltaTime * energie;
@@ -59,12 +64,17 @@ public void ApplyTheVelocity(){
 			}
 			if (col.gameObject.tag == "destructible"){
 				if (energie > maxEnergie / 2f) {
+					if(!col.gameObject.GetComponent<Rigidbody> ()){
+						col.gameObject.AddComponent<Rigidbody>();
+					}
 					col.gameObject.GetComponent<Rigidbody> ().mass = 10f;
+					col.gameObject.GetComponent<Rigidbody> ().velocity = rb.velocity;
+					col.gameObject.GetComponent<ScriptObjDestructible>().enabled = true;
 				} else {
 					direction = col.contacts [0].normal.normalized;
 				}
 			}
-		}
+		
 		ApplyTheVelocity();
 	}
 

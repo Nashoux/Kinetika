@@ -145,7 +145,9 @@ public class CineticGunV2 : MonoBehaviour {
 				Gun_Don_Direction_Event.start();
 				myBlock.direction = Camera.main.transform.forward; 
 				Debug.Log(lastParticuleDirection.name);
-				lastParticuleDirection.transform.LookAt(myBlock.gameObject.transform.position+myBlock.direction);					
+				if(hit.collider.GetComponent<BlockAlreadyMovingV2>().move){
+					lastParticuleDirection.transform.LookAt(myBlock.gameObject.transform.position+myBlock.direction);	
+				}				
 				myBlock.ApplyTheVelocity();
 			}
 		} else {
@@ -159,7 +161,9 @@ public class CineticGunV2 : MonoBehaviour {
 				BlockAlreadyMovingV2 myBlock = hit.collider.GetComponent<BlockAlreadyMovingV2>();
 				Gun_Don_Direction_Event.start();
 				myBlock.direction = -Camera.main.transform.forward ;
-				lastParticuleDirection.transform.LookAt(myBlock.gameObject.transform.position+myBlock.direction);	
+				if(hit.collider.GetComponent<BlockAlreadyMovingV2>().move){
+					lastParticuleDirection.transform.LookAt(myBlock.gameObject.transform.position+myBlock.direction);	
+				}	
 				
 				myBlock.ApplyTheVelocity();
 			}
@@ -184,7 +188,6 @@ public class CineticGunV2 : MonoBehaviour {
 									myEnergie += myBlock.energie;
 									myBlock.energie = 0;
 								}
-
 								lastParticuleAspiration.GetComponent<ParticleSystem>().Emit((int)myEnergie/3);
 								lastParticuleAspiration.GetComponent<ParticleSystem>().Stop();
 								Destroy(lastParticuleAspiration.gameObject,2f);
