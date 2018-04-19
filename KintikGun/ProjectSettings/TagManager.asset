@@ -9,6 +9,7 @@ TagManager:
   - destructible
   - wall
   - changeScene
+  - BlocTuto
   layers:
   - Default
   - TransparentFX
