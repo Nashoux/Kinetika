@@ -63,9 +63,11 @@ public void ApplyTheVelocity(){
 					if(!col.gameObject.GetComponent<Rigidbody> ()){
 						col.gameObject.AddComponent<Rigidbody>();
 					}
-					col.gameObject.GetComponent<Rigidbody> ().mass = 10f;
+					//col.gameObject.GetComponent<Rigidbody> ().mass = 10f;
 					col.gameObject.GetComponent<Rigidbody> ().velocity = rb.velocity;
-					col.gameObject.GetComponent<ScriptObjDestructible>().enabled = true;
+					if(col.gameObject.GetComponent<ScriptObjDestructible>()){
+						col.gameObject.GetComponent<ScriptObjDestructible>().enabled = true;
+					}
 				} else {					
 					direction = col.contacts [0].normal.normalized;
 				}

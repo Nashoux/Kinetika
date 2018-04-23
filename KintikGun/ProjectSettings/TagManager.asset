@@ -10,6 +10,8 @@ TagManager:
   - wall
   - changeScene
   - BlocTuto
+  - death
+  - checkpoint
   layers:
   - Default
   - TransparentFX
