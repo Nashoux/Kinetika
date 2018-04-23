@@ -129,7 +129,7 @@ using Random = UnityEngine.Random;
 
             m_Camera = Camera.main;
 			m_MouseLook.Init(transform , m_Camera.transform);
-			transform.position = positionSpawn;
+			//transform.position = positionSpawn; //pour spawn sur checkpoint
         }
 
 
