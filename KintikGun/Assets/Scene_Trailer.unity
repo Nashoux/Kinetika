@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 40592}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (47)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6111,7 +6111,7 @@ GameObject:
   - component: {fileID: 115978268}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (28)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8674,7 +8674,7 @@ GameObject:
   - component: {fileID: 180238735}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (19)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8900,7 +8900,7 @@ GameObject:
   - component: {fileID: 183683998}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (21)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9568,7 +9568,7 @@ GameObject:
   - component: {fileID: 194051635}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (45)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10130,7 +10130,7 @@ GameObject:
   - component: {fileID: 201662517}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (11)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12504,7 +12504,7 @@ GameObject:
   - component: {fileID: 240440617}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (58)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12922,7 +12922,7 @@ GameObject:
   - component: {fileID: 243397233}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (8)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14339,7 +14339,7 @@ GameObject:
   - component: {fileID: 264389659}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (44)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15211,15 +15211,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 618.1
+      value: 367
       objectReference: {fileID: 0}
     - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 131
+      value: 141
       objectReference: {fileID: 0}
     - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -222
+      value: -572.1
       objectReference: {fileID: 0}
     - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
       propertyPath: m_LocalRotation.x
@@ -15243,15 +15243,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4722501777198690, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -144.46
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4722501777198690, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 65.78
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4722501777198690, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10.46
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4722501777198690, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
       propertyPath: m_LocalRotation.x
@@ -15295,7 +15295,9 @@ Prefab:
       propertyPath: jumpSpeed
       value: 100
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114926170942976182, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+    - {fileID: 114636275325241972, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &282453885
@@ -15313,7 +15315,7 @@ GameObject:
   - component: {fileID: 282453887}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (3)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22648,7 +22650,7 @@ GameObject:
   - component: {fileID: 409705847}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (43)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23850,7 +23852,7 @@ GameObject:
   - component: {fileID: 440629139}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (23)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24174,7 +24176,7 @@ GameObject:
   - component: {fileID: 441205202}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (50)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24722,7 +24724,7 @@ GameObject:
   - component: {fileID: 447674227}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (57)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30591,19 +30593,18 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_PrefabInternal: {fileID: 1373424516}
---- !u!114 &539787740
-MonoBehaviour:
+--- !u!65 &539787740
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 539787738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGrav: 0
-  myMass: 0
+  serializedVersion: 2
+  m_Size: {x: 0.49612287, y: 0.47048384, z: 0.17}
+  m_Center: {x: 0.0000009536743, y: -0.00000046938658, z: -2.7755576e-17}
 --- !u!1 &540423341 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c96ff9da69869e84eb0a0ba67f2fbc36, type: 3}
@@ -35575,19 +35576,18 @@ BoxCollider:
 GameObject:
   m_PrefabParentObject: {fileID: 100014, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_PrefabInternal: {fileID: 1373424516}
---- !u!114 &640003613
-MonoBehaviour:
+--- !u!65 &640003613
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 640003611}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGrav: 0
-  myMass: 0
+  serializedVersion: 2
+  m_Size: {x: 0.45003146, y: 0.2974732, z: 0.17}
+  m_Center: {x: 0.0000009611249, y: -0.00000046938658, z: -1.6967764e-16}
 --- !u!1 &642631854
 GameObject:
   m_ObjectHideFlags: 0
@@ -37532,7 +37532,7 @@ GameObject:
   - component: {fileID: 681573789}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (59)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39834,7 +39834,7 @@ GameObject:
   - component: {fileID: 731932437}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (7)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41437,19 +41437,18 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100012, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_PrefabInternal: {fileID: 1373424516}
---- !u!114 &766351562
-MonoBehaviour:
+--- !u!65 &766351562
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 766351560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGrav: 0
-  myMass: 0
+  serializedVersion: 2
+  m_Size: {x: 0.49661893, y: 0.4154229, z: 0.17}
+  m_Center: {x: -1.7347235e-17, y: -0.00000043958426, z: 0.0000038146973}
 --- !u!4 &766727592 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4988951611666416, guid: 0c42dfff58cf8bb41abf1c47c0043514,
@@ -44289,7 +44288,7 @@ GameObject:
   - component: {fileID: 822705861}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (46)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46445,7 +46444,7 @@ GameObject:
   - component: {fileID: 844409304}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (60)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47438,19 +47437,18 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_PrefabInternal: {fileID: 1373424516}
---- !u!114 &866230698
-MonoBehaviour:
+--- !u!65 &866230698
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 866230696}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGrav: 0
-  myMass: 0
+  serializedVersion: 2
+  m_Size: {x: 0.49612287, y: 0.47069174, z: 0.17}
+  m_Center: {x: 0.0000009536743, y: -0.00000047683716, z: 0}
 --- !u!1 &872995126
 GameObject:
   m_ObjectHideFlags: 0
@@ -50375,7 +50373,7 @@ GameObject:
   - component: {fileID: 933364336}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (52)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51402,19 +51400,18 @@ MeshCollider:
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_PrefabInternal: {fileID: 1373424516}
---- !u!114 &956273843
-MonoBehaviour:
+--- !u!65 &956273843
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 956273841}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGrav: 0
-  myMass: 0
+  serializedVersion: 2
+  m_Size: {x: 0.35345045, y: 0.23978937, z: 0.17}
+  m_Center: {x: 0.0000009760261, y: -0.0000004656613, z: -4.6739956e-16}
 --- !u!1 &956531745
 GameObject:
   m_ObjectHideFlags: 0
@@ -51773,6 +51770,88 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &964188359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 964188363}
+  - component: {fileID: 964188362}
+  - component: {fileID: 964188361}
+  - component: {fileID: 964188360}
+  m_Layer: 0
+  m_Name: DEATH
+  m_TagString: death
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &964188360
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 964188359}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &964188361
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 964188359}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999964, y: 149.44397, z: 1}
+  m_Center: {x: 0, y: -51.18036, z: 0}
+--- !u!33 &964188362
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 964188359}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &964188363
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 964188359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 421, y: 77, z: -375}
+  m_LocalScale: {x: 924.14996, y: 1, z: 870.94507}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 58
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &965753603
 GameObject:
   m_ObjectHideFlags: 0
@@ -54612,19 +54691,18 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_PrefabInternal: {fileID: 1373424516}
---- !u!114 &1026772001
-MonoBehaviour:
+--- !u!65 &1026772001
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1026771999}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGrav: 0
-  myMass: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5526559, y: 0.42668724, z: 0.17}
+  m_Center: {x: -0.000000014901163, y: -0.000000014901165, z: 3.3935528e-16}
 --- !u!1 &1027066274
 GameObject:
   m_ObjectHideFlags: 0
@@ -56045,7 +56123,7 @@ GameObject:
   - component: {fileID: 1043787292}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (56)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56269,7 +56347,7 @@ GameObject:
   - component: {fileID: 1047358857}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (53)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56704,7 +56782,7 @@ GameObject:
   - component: {fileID: 1054329410}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (2)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60568,7 +60646,7 @@ GameObject:
   - component: {fileID: 1135708640}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (64)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61896,19 +61974,18 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100018, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_PrefabInternal: {fileID: 1373424516}
---- !u!114 &1154037929
-MonoBehaviour:
+--- !u!65 &1154037929
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1154037927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGrav: 0
-  myMass: 0
+  serializedVersion: 2
+  m_Size: {x: 0.31829873, y: 0.3050248, z: 0.17}
+  m_Center: {x: 0.00000094622374, y: -0.0000009536743, z: 0.0000038146973}
 --- !u!1 &1154146105
 GameObject:
   m_ObjectHideFlags: 0
@@ -63555,7 +63632,7 @@ GameObject:
   - component: {fileID: 1194821435}
   m_Layer: 0
   m_Name: REFERENTIEL (1)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64337,7 +64414,7 @@ GameObject:
   - component: {fileID: 1208633574}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (9)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69546,7 +69623,7 @@ GameObject:
   - component: {fileID: 1335363149}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (49)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70317,9 +70394,9 @@ MeshCollider:
   m_GameObject: {fileID: 1351982014}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Convex: 0
+  m_Convex: 1
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: cf70d441e558f18479a11d0d0720cfff, type: 3}
@@ -71352,6 +71429,46 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.92300004
       objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
+      propertyPath: m_TagString
+      value: death
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_IsPrefabParent: 0
@@ -72094,7 +72211,7 @@ GameObject:
   - component: {fileID: 1393892845}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (54)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72534,7 +72651,7 @@ GameObject:
   - component: {fileID: 1397302022}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (63)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78767,19 +78884,18 @@ MeshCollider:
 GameObject:
   m_PrefabParentObject: {fileID: 100020, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_PrefabInternal: {fileID: 1373424516}
---- !u!114 &1527382312
-MonoBehaviour:
+--- !u!65 &1527382312
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1527382310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGrav: 0
-  myMass: 0
+  serializedVersion: 2
+  m_Size: {x: 0.44370526, y: 0.36043844, z: 0.17}
+  m_Center: {x: 0.000000014901163, y: 0.000000014901165, z: -3.3935528e-16}
 --- !u!1 &1527727521 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1932559369776958, guid: 01faec03d3f540145bbc801e0ca4a64f,
@@ -81953,7 +82069,7 @@ GameObject:
   - component: {fileID: 1574720283}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (30)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83143,6 +83259,88 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3a542e9cde4e35244a7a5ea9ed85c1ae, type: 3}
+--- !u!1 &1594773783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1594773787}
+  - component: {fileID: 1594773786}
+  - component: {fileID: 1594773785}
+  - component: {fileID: 1594773784}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: checkpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1594773784
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594773783}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1594773785
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594773783}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1594773786
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594773783}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1594773787
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594773783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 361.8, y: 141.94, z: -523.2}
+  m_LocalScale: {x: 2.1495275, y: 6.8138614, z: 3.131258}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 59
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1596870828
 GameObject:
   m_ObjectHideFlags: 0
@@ -84808,7 +85006,7 @@ GameObject:
   - component: {fileID: 1640882761}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (51)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88945,7 +89143,7 @@ GameObject:
   - component: {fileID: 1745800358}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (48)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95373,7 +95571,7 @@ GameObject:
   - component: {fileID: 1862598440}
   m_Layer: 0
   m_Name: REFERENTIEL (2)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97024,7 +97222,7 @@ GameObject:
   - component: {fileID: 1900134272}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (32)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97457,19 +97655,18 @@ MeshCollider:
 GameObject:
   m_PrefabParentObject: {fileID: 100016, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_PrefabInternal: {fileID: 1373424516}
---- !u!114 &1905021519
-MonoBehaviour:
+--- !u!65 &1905021519
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1905021517}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGrav: 0
-  myMass: 0
+  serializedVersion: 2
+  m_Size: {x: 0.24114406, y: 0.5178708, z: 0.17}
+  m_Center: {x: -0.000000011175873, y: -0.000000461936, z: 0.0000038146973}
 --- !u!1001 &1906892832
 Prefab:
   m_ObjectHideFlags: 0
@@ -103394,19 +103591,18 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: e06b026684d2fc54dbd8234f23999c4b, type: 3}
   m_PrefabInternal: {fileID: 1373424516}
---- !u!114 &2035626176
-MonoBehaviour:
+--- !u!65 &2035626176
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2035626174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a426d47ab41f0a84e817ec8917d81b61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myGrav: 0
-  myMass: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5603567, y: 0.31430337, z: 0.17}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!1 &2037139506
 GameObject:
   m_ObjectHideFlags: 0
@@ -103570,7 +103766,7 @@ GameObject:
   - component: {fileID: 2039466158}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (62)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106173,7 +106369,7 @@ GameObject:
   - component: {fileID: 2083077387}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (61)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107113,7 +107309,7 @@ GameObject:
   - component: {fileID: 2093305732}
   m_Layer: 0
   m_Name: SPHERE_MOBILE_Physicalisee (55)
-  m_TagString: destructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
