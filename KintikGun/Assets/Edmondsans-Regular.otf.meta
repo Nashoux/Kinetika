@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b7685b17af0e8ec4faef3ef55a72864e
+timeCreated: 1524040101
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Edmondsans
+  fontNames:
+  - Edmondsans
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

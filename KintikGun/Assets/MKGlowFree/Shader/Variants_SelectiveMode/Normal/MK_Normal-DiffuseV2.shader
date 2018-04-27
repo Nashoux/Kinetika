@@ -33,11 +33,11 @@ struct Input {
 };
 
 void surf (Input IN, inout SurfaceOutput o) {
-	fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * (_Color *1.25f);
+	fixed4 c = tex2D(_MainTex, IN.uv_MainTex)*0.9f * (_Color *1.2f);
 	fixed3 d = tex2D(_MKGlowTex, IN.uv_MKGlowTex) * _MKGlowTexColor;
 	c.rgb += (d.rgb *_MKGlowTexStrength);
 	o.Albedo = c.rgb;
-	o.Alpha = 1000000;
+	o.Alpha = 1;
 }
 ENDCG
 }

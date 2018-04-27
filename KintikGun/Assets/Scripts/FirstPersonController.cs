@@ -33,13 +33,10 @@ using Random = UnityEngine.Random;
     private Vector2 m_Input;
     private Vector3 m_MoveDir = Vector3.zero;
 	private Rigidbody rb;
-
 	bool collided = false;
-
 
 	public bool grounded = false;
 	[SerializeField] CineticGunV2 myGun;
-
 	[SerializeField] Vector3 newVelocity;
 
 	[SerializeField] Image myImage;
@@ -50,8 +47,8 @@ using Random = UnityEngine.Random;
 
 	bool isChangingScene = false;
 
-
-
+	public static Vector3 positionSpawn = new Vector3(367f,141f,-572.1f);
+	public Vector3 basePosition = new Vector3(367f,141f,-572.1f);
 
 
 	IEnumerator ChangeSceneEnd(){
@@ -132,6 +129,7 @@ using Random = UnityEngine.Random;
 
             m_Camera = Camera.main;
 			m_MouseLook.Init(transform , m_Camera.transform);
+			//transform.position = positionSpawn; //pour spawn sur checkpoint
         }
 
 
@@ -219,24 +217,21 @@ using Random = UnityEngine.Random;
 		     m_MouseLook.UpdateCursorLock();
         }
 
-        private void GetInput(){
-            // Read input
-			float horizontal = Input.GetAxis("Horizontal");
-			float vertical = Input.GetAxis("Vertical");
+    private void GetInput(){
+         // Read input
+		float horizontal = Input.GetAxis("Horizontal");
+		float vertical = Input.GetAxis("Vertical");
+        // set the desired speed to be walking or running
+        m_Input = new Vector2(horizontal, vertical);
 
-
-            // set the desired speed to be walking or running
-            m_Input = new Vector2(horizontal, vertical);
-
-            // normalize input if it exceeds 1 in combined length:
-            if (m_Input.sqrMagnitude > 1){
-                m_Input.Normalize();
-            }           
-        }
-        private void RotateView()
-        {
-            m_MouseLook.LookRotation (transform, m_Camera.transform);
-        }
+        // normalize input if it exceeds 1 in combined length:
+        if (m_Input.sqrMagnitude > 1){
+            m_Input.Normalize();
+        }           
+    }
+    private void RotateView(){
+        m_MouseLook.LookRotation (transform, m_Camera.transform);
+    }
 
 	void OnCollisionEnter(Collision col){
 		if (col.contacts [0].normal.y > -0.1f) {
@@ -248,6 +243,7 @@ using Random = UnityEngine.Random;
 	}
 
 	void OnTriggerEnter(Collider col){
+		Debug.Log(0);
 		if (!isChangingScene && col.tag == "ChangeSceneEnd") {
 			jingle2_Event.start ();  
 			isChangingScene = true;
@@ -257,6 +253,13 @@ using Random = UnityEngine.Random;
 			jingle2_Event.start ();  
 			isChangingScene = true;
 			StartCoroutine ("ChangeScene");
+		}
+		if (col.tag == "death"){
+			Debug.Log(1);
+			StartCoroutine ("ChangeSceneReload");
+		}
+		if (col.tag == "checkpoint"){
+			positionSpawn = col.transform.position;
 		}
 	}
 
@@ -271,7 +274,6 @@ using Random = UnityEngine.Random;
 		} else {
 			newVelocity = new Vector3 (0, 0, 0);
 		}
-
 	}
 
 	void OnCollisionExit(){

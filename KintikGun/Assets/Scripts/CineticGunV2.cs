@@ -163,8 +163,7 @@ public class CineticGunV2 : MonoBehaviour {
 				myBlock.direction = -Camera.main.transform.forward ;
 				if(hit.collider.GetComponent<BlockAlreadyMovingV2>().move){
 					lastParticuleDirection.transform.LookAt(myBlock.gameObject.transform.position+myBlock.direction);	
-				}	
-				
+				}					
 				myBlock.ApplyTheVelocity();
 			}
 		}

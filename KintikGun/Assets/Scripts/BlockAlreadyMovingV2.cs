@@ -41,6 +41,7 @@ public void ApplyTheVelocity(){
 		for (int i = 0; i < myMat.Length; i++) {			
 			myMat[i].SetFloat("_MKGlowTexStrength", energieNew);
 		}	
+		direction = Vector3.Normalize(direction);
 		Vector3 newVelocity = direction * Time.deltaTime * energie;
 		rb.velocity = newVelocity;
 	}else{
@@ -48,29 +49,26 @@ public void ApplyTheVelocity(){
 	}
 }
 
-	void OnCollisionEnter(Collision col){
-		
-		if(gameObject.tag != "destructible"){
-			if (col.gameObject.GetComponent<BlockAlreadyMovingV2> ()) {
-				if (energie > maxEnergie / 2) {
-
-				}
-			}
-		} 
+	void OnCollisionEnter(Collision col){		
 			if (!col.gameObject.GetComponent<CineticGunV2> () && col.gameObject.tag != "destructible") {
-				direction = col.contacts [0].normal.normalized;
-				Vector3 velocity = direction * Time.deltaTime * energie;
-				rb.velocity = velocity;
+				if(col.contacts[0].point.y-transform.position.y<-0.1f){
+					direction = new Vector3(direction.x,-direction.y,direction.z);
+				}else{
+					direction = col.contacts [0].normal.normalized;
+				}
+				ApplyTheVelocity();
 			}
-			if (col.gameObject.tag == "destructible"){
+			if (col.gameObject.tag == "destructible" || col.gameObject.GetComponent<BlockAlreadyMovingV2>()){
 				if (energie > maxEnergie / 2f) {
 					if(!col.gameObject.GetComponent<Rigidbody> ()){
 						col.gameObject.AddComponent<Rigidbody>();
 					}
-					col.gameObject.GetComponent<Rigidbody> ().mass = 10f;
+					//col.gameObject.GetComponent<Rigidbody> ().mass = 10f;
 					col.gameObject.GetComponent<Rigidbody> ().velocity = rb.velocity;
-					col.gameObject.GetComponent<ScriptObjDestructible>().enabled = true;
-				} else {
+					if(col.gameObject.GetComponent<ScriptObjDestructible>()){
+						col.gameObject.GetComponent<ScriptObjDestructible>().enabled = true;
+					}
+				} else {					
 					direction = col.contacts [0].normal.normalized;
 				}
 			}
