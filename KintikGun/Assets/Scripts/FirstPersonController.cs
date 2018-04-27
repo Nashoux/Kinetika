@@ -47,7 +47,7 @@ using Random = UnityEngine.Random;
 
 	bool isChangingScene = false;
 
-	public static Vector3 positionSpawn = new Vector3(367f,141f,-572.1f);
+	public static Vector3 positionSpawn; //= new Vector3(367f,141f,-572.1f);
 	public Vector3 basePosition = new Vector3(367f,141f,-572.1f);
 
 
