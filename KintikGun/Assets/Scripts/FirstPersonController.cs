@@ -49,6 +49,7 @@ using Random = UnityEngine.Random;
 
 	public static Vector3 positionSpawn; //= new Vector3(367f,141f,-572.1f);
 	public Vector3 basePosition = new Vector3(367f,141f,-572.1f);
+	public GameObject ObjetMobile;
 
 
 	IEnumerator ChangeSceneEnd(){
@@ -261,7 +262,10 @@ using Random = UnityEngine.Random;
 		if (col.tag == "checkpoint"){
 			positionSpawn = col.transform.position;
 		}
-	}
+
+
+		}
+
 
 	void OnCollisionStay(Collision col){
 

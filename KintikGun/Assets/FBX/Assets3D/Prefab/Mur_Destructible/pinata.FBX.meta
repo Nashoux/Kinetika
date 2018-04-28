@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: 66297e5a3c4eec84ab16239d343f3375
+timeCreated: 1524832319
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Pyramid003
+    100004: Pyramid004
+    100006: Pyramid005
+    100008: Pyramid007
+    100010: Pyramid008
+    100012: Pyramid009
+    100014: Sphere003
+    100016: Sphere004
+    100018: Sphere005
+    100020: Sphere006
+    100022: Sphere007
+    100024: Sphere008
+    100026: Sphere009
+    100028: Sphere010
+    400000: //RootNode
+    400002: Pyramid003
+    400004: Pyramid004
+    400006: Pyramid005
+    400008: Pyramid007
+    400010: Pyramid008
+    400012: Pyramid009
+    400014: Sphere003
+    400016: Sphere004
+    400018: Sphere005
+    400020: Sphere006
+    400022: Sphere007
+    400024: Sphere008
+    400026: Sphere009
+    400028: Sphere010
+    2300000: Pyramid003
+    2300002: Pyramid004
+    2300004: Pyramid005
+    2300006: Pyramid007
+    2300008: Pyramid008
+    2300010: Pyramid009
+    2300012: Sphere003
+    2300014: Sphere004
+    2300016: Sphere005
+    2300018: Sphere006
+    2300020: Sphere007
+    2300022: Sphere008
+    2300024: Sphere009
+    2300026: Sphere010
+    3300000: Pyramid003
+    3300002: Pyramid004
+    3300004: Pyramid005
+    3300006: Pyramid007
+    3300008: Pyramid008
+    3300010: Pyramid009
+    3300012: Sphere003
+    3300014: Sphere004
+    3300016: Sphere005
+    3300018: Sphere006
+    3300020: Sphere007
+    3300022: Sphere008
+    3300024: Sphere009
+    3300026: Sphere010
+    4300000: Pyramid003
+    4300002: Pyramid004
+    4300004: Pyramid005
+    4300006: Pyramid007
+    4300008: Sphere003
+    4300010: Sphere004
+    4300012: Sphere005
+    4300014: Sphere006
+    4300016: Sphere007
+    4300018: Sphere008
+    4300020: Sphere009
+    4300022: Sphere010
+    4300024: Pyramid008
+    4300026: Pyramid009
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
