@@ -69,6 +69,12 @@ public class CineticGunV2 : MonoBehaviour {
 	bool energiseTake = false;
 	float energiseTakeTimer = 0.8f;
 
+
+	//Ma variable correspondant au nombre de palier à pour pousser un objet jusqu'à soi
+	float step = 0;
+
+
+
 	public BlockAlreadyMovingV2 blockLock;
 	public Vector3 blockLockDistanceBase = new Vector3(0,0,0);
 
@@ -155,19 +161,34 @@ public class CineticGunV2 : MonoBehaviour {
 		}
 
 		//inverse
-		if(Input.GetKeyDown(KeyCode.Joystick1Button5) || Input.GetMouseButtonDown(1)){
+		if(Input.GetKeyDown(KeyCode.Joystick1Button5) || Input.GetMouseButtonDown(1))
+		{
 			RaycastHit hit;
 			if (Physics.Raycast (transform.position, Camera.main.transform.TransformDirection (Vector3.forward), out hit, Mathf.Infinity, myMask) &&  hit.collider.GetComponent<BlockAlreadyMovingV2>()  ) {
 				BlockAlreadyMovingV2 myBlock = hit.collider.GetComponent<BlockAlreadyMovingV2>();
 				Gun_Don_Direction_Event.start();
-				myBlock.direction = -Camera.main.transform.forward ;
-				if(hit.collider.GetComponent<BlockAlreadyMovingV2>().move){
+
+
+				//myBlock.direction = -Camera.main.transform.forward ;
+
+
+
+				//C'est ici que je vais effectuer une frappe chirurgicale dans le but d'attier les objets à nous.
+
+
+				StartCoroutine (StepMovement(myBlock));
+
+				////////////////////////////:
+
+				if(hit.collider.GetComponent<BlockAlreadyMovingV2>().move)
+				{
 					lastParticuleDirection.transform.LookAt(myBlock.gameObject.transform.position+myBlock.direction);	
 				}					
 				myBlock.ApplyTheVelocity();
 			}
 		}
 		#endregion
+
 
 		#region Energise
 		//take
@@ -407,5 +428,18 @@ public class CineticGunV2 : MonoBehaviour {
 		yield return null;
 	}
 
+	//step += Time.deltaTime;
 
+	IEnumerator StepMovement (BlockAlreadyMovingV2 CeBloc)
+	{
+		Vector3 ActualPosition = transform.position;
+		step = 0;
+
+		while (Vector3.Distance(CeBloc.transform.position, ActualPosition) > 8f) 
+		{
+			step += Time.deltaTime;
+			CeBloc.transform.position = Vector3.MoveTowards (CeBloc.transform.position, transform.position, step);
+			yield return null;
+		}
+	}
 }
