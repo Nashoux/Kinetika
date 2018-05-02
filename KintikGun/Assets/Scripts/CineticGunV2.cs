@@ -73,9 +73,14 @@ public class CineticGunV2 : MonoBehaviour {
 	//Ma variable correspondant au nombre de palier à pour pousser un objet jusqu'à soi
 	float step = 0;
 
+	public BlockAlreadyMovingV2 FreezedBlock;
+
+
+	/// /////// /////// /////// /////// /////// /////// /////// ////
 
 
 	public BlockAlreadyMovingV2 blockLock;
+	bool ObjectFreezed = false;
 	public Vector3 blockLockDistanceBase = new Vector3(0,0,0);
 
 	GameObject lastParticuleAspiration;
@@ -98,6 +103,7 @@ public class CineticGunV2 : MonoBehaviour {
 
 
 	void Start () {
+		
 
 		//myForces = new BlockMove.Force (new Vector3(1,0,0), new Vector3( transform.rotation.x, transform.rotation.y, transform.rotation.z) , 0.5f);
 		myMask = 5;
@@ -110,15 +116,36 @@ public class CineticGunV2 : MonoBehaviour {
 		Gun_Max_Energie_Event = FMODUnity.RuntimeManager.CreateInstance (Gun_Max_Energie);
 		Gun_Min_Energie_Event = FMODUnity.RuntimeManager.CreateInstance (Gun_Min_Energie);
 	}
-	
-	void Update ()	{
+
+	void Update ()	
+	{
+		
+
+
 
 		viseurObjects [0].fillAmount = viseurFill[0] + myEnergie / myEnergieMax*4;
 		viseurObjects [1].fillAmount = viseurFill [1] + myEnergie / myEnergieMax*4 - 1;
 		viseurObjects [2].fillAmount = viseurFill [2] + myEnergie / myEnergieMax*4 - 2;
-		viseurObjects [3].fillAmount = viseurFill [3] + myEnergie / myEnergieMax*4 - 3;				
+		viseurObjects [3].fillAmount = viseurFill [3] + myEnergie / myEnergieMax*4 - 3;		
 
-			RaycastHit hita; 
+
+		//Ici du nouveau code pour indiquer comment gagner de l'énergie en appuyant sur une touche ou de façon continue 
+
+		StartCoroutine (recharge (myEnergie));
+
+		if (Input.GetKey(KeyCode.Y)) 
+		{
+			StartCoroutine (recharge (myEnergie));
+
+		} 
+		else if (Input.GetKeyUp (KeyCode.Y)) 
+		{
+			StopCoroutine(recharge (myEnergie));
+		}
+		///////////////////////////////////
+
+
+		RaycastHit hita; 
 		if (Physics.SphereCast (transform.position,castSize,Camera.main.transform.TransformDirection (Vector3.forward), out hita, Mathf.Infinity, myMask) && hita.collider.GetComponent<BlockAlreadyMovingV2> () && lastPlateformSeen != hita.collider.gameObject && hita.collider.GetComponent<BlockAlreadyMovingV2> ().direction != new Vector3(0,0,0)) { 
 			if(lastParticuleDirection!= null){
 				lastParticuleDirection.GetComponent<ParticleSystem>().Stop();
@@ -151,13 +178,25 @@ public class CineticGunV2 : MonoBehaviour {
 				Gun_Don_Direction_Event.start();
 				myBlock.direction = Camera.main.transform.forward; 
 				Debug.Log(lastParticuleDirection.name);
+
+
+				//Ici je rajoute le code qui fait ralentir l'objet une fois qu'il est en mouvement
+
+
+				StartCoroutine (Ralentissement(myBlock));
+
+
+
+
 				if(hit.collider.GetComponent<BlockAlreadyMovingV2>().move){
 					lastParticuleDirection.transform.LookAt(myBlock.gameObject.transform.position+myBlock.direction);	
 				}				
 				myBlock.ApplyTheVelocity();
 			}
-		} else {
+		} else 
+		{
 			stocked = false;
+
 		}
 
 		//inverse
@@ -171,10 +210,7 @@ public class CineticGunV2 : MonoBehaviour {
 
 				//myBlock.direction = -Camera.main.transform.forward ;
 
-
-
 				//C'est ici que je vais effectuer une frappe chirurgicale dans le but d'attier les objets à nous.
-
 
 				StartCoroutine (StepMovement(myBlock));
 
@@ -194,104 +230,111 @@ public class CineticGunV2 : MonoBehaviour {
 		//take
 		bool isTackingEnergie = false;
 		if ( Input.GetKey (KeyCode.Joystick1Button4)|| Input.GetKey (KeyCode.A) ) {
-				RaycastHit energiseHit;
-				if (Physics.SphereCast (transform.position, castSize, Camera.main.transform.TransformDirection (Vector3.forward), out energiseHit, Mathf.Infinity, myMask) && energiseHit.collider.GetComponent<BlockAlreadyMovingV2> ()  ) {
-					BlockAlreadyMovingV2 myBlock = energiseHit.collider.GetComponent<BlockAlreadyMovingV2> ();
-					if(myEnergie < myEnergieMax){
-						if(myBlock.energie>0){							
-							if (energiseTake && ( Input.GetKeyDown (KeyCode.Joystick1Button4) || Input.GetKeyDown (KeyCode.A) )) {
-								float myAddedEnergie = myEnergieMax - myEnergie;
-								if(myAddedEnergie <= myBlock.energie){
-									myEnergie += myAddedEnergie;
-									myBlock.energie -= myAddedEnergie;
-								}else{
-									myEnergie += myBlock.energie;
-									myBlock.energie = 0;
-								}
-								lastParticuleAspiration.GetComponent<ParticleSystem>().Emit((int)myEnergie/3);
-								lastParticuleAspiration.GetComponent<ParticleSystem>().Stop();
-								Destroy(lastParticuleAspiration.gameObject,2f);
-								isTackingEnergie = false;
-							} else {
-								if(Input.GetKeyDown (KeyCode.Joystick1Button4)|| Input.GetKeyDown (KeyCode.A) || lastPlateformSeen != energiseHit.collider.gameObject){
-									Gun_Absorbe_Energie_Event.start();
-									lastParticuleAspiration = Instantiate<GameObject>(ParticulesAspiration);
-									lastParticuleAspiration.GetComponent<particleAttractorLinear>().target = this.transform;
-									lastParticuleAspiration.transform.parent = energiseHit.collider.transform;
-									lastParticuleAspiration.transform.position = energiseHit.collider.transform.position;
-									Destroy(lastParticuleAspiration.gameObject,8);
-									energiseTake = true;
-									energiseTakeTimer = 0.8f;
-								}
-								isTackingEnergie = true;
-								myBlock.energie -= 3;
-								myEnergie += 3;
+			RaycastHit energiseHit;
+			if (Physics.SphereCast (transform.position, castSize, Camera.main.transform.TransformDirection (Vector3.forward), out energiseHit, Mathf.Infinity, myMask) && energiseHit.collider.GetComponent<BlockAlreadyMovingV2> ()  ) {
+				BlockAlreadyMovingV2 myBlock = energiseHit.collider.GetComponent<BlockAlreadyMovingV2> ();
+				if(myEnergie < myEnergieMax)
+				{
+					if(myBlock.energie>0)
+					{							
+						if (energiseTake && ( Input.GetKeyDown (KeyCode.Joystick1Button4) || Input.GetKeyDown (KeyCode.A) )) 
+						{
+							float myAddedEnergie = myEnergieMax - myEnergie;
+							if(myAddedEnergie <= myBlock.energie){
+								myEnergie += myAddedEnergie;
+								myBlock.energie -= myAddedEnergie;
 							}
+							else
+							{
+								myEnergie += myBlock.energie;
+								myBlock.energie = 0;
+							}
+							lastParticuleAspiration.GetComponent<ParticleSystem>().Emit((int)myEnergie/3);
+							lastParticuleAspiration.GetComponent<ParticleSystem>().Stop();
+							Destroy(lastParticuleAspiration.gameObject,2f);
+							isTackingEnergie = false;
+						} 
+						else 
+						{
+							if(Input.GetKeyDown (KeyCode.Joystick1Button4)|| Input.GetKeyDown (KeyCode.A) || lastPlateformSeen != energiseHit.collider.gameObject){
+								Gun_Absorbe_Energie_Event.start();
+								lastParticuleAspiration = Instantiate<GameObject>(ParticulesAspiration);
+								lastParticuleAspiration.GetComponent<particleAttractorLinear>().target = this.transform;
+								lastParticuleAspiration.transform.parent = energiseHit.collider.transform;
+								lastParticuleAspiration.transform.position = energiseHit.collider.transform.position;
+								Destroy(lastParticuleAspiration.gameObject,8);
+								energiseTake = true;
+								energiseTakeTimer = 0.8f;
+							}
+							isTackingEnergie = true;
+							myBlock.energie -= 3;
+							myEnergie += 3;
+						}
 
-							if (myBlock.energie < 0f) {
-								myBlock.energie = 0f;
-							}
-							myBlock.ApplyTheVelocity();		
+						if (myBlock.energie < 0f) {
+							myBlock.energie = 0f;
 						}
-					}else{
-						if(Input.GetKeyDown (KeyCode.Joystick1Button4) || Input.GetKeyDown (KeyCode.A)){
-							Gun_Min_Energie_Event.start();
-						}
+						myBlock.ApplyTheVelocity();		
 					}
-					myBlock.ApplyTheVelocity();
+				}else{
+					if(Input.GetKeyDown (KeyCode.Joystick1Button4) || Input.GetKeyDown (KeyCode.A)){
+						Gun_Min_Energie_Event.start();
+					}
+				}
+				myBlock.ApplyTheVelocity();
 			}else if (energiseHit.collider != null && energiseHit.transform.tag == "destructible"){
-					if(myEnergie < myEnergieMax){
-						if(energiseHit.rigidbody.velocity.magnitude >0){
+				if(myEnergie < myEnergieMax){
+					if(energiseHit.rigidbody.velocity.magnitude >0){
 
-							if (energiseTake && ( Input.GetKeyDown (KeyCode.Joystick1Button4) || Input.GetKeyDown (KeyCode.A) )) {
-								float myAddedEnergie = myEnergieMax - myEnergie;
-								if(myAddedEnergie <= energiseHit.rigidbody.velocity.magnitude){
-									myEnergie += myAddedEnergie;
-									energiseHit.rigidbody.velocity = new Vector3(0,0,0);
-								}else{
-									myEnergie += energiseHit.rigidbody.velocity.magnitude;
-									Debug.Log(energiseHit.rigidbody.velocity.magnitude);
-									energiseHit.rigidbody.velocity = new Vector3(0,0,0);
-								}
-								energiseHit.rigidbody.angularVelocity = new Vector3(0,0,0);
-								lastParticuleAspiration.GetComponent<ParticleSystem>().Emit((int)myEnergie/3);
-								lastParticuleAspiration.GetComponent<ParticleSystem>().Stop();
-								Destroy(lastParticuleAspiration.gameObject,2f);
-								isTackingEnergie = false;
-							} else {
-								if(Input.GetKeyDown (KeyCode.Joystick1Button4)|| Input.GetKeyDown (KeyCode.A) || lastPlateformSeen != energiseHit.collider.gameObject){
-									Gun_Absorbe_Energie_Event.start();
-									lastParticuleAspiration = Instantiate<GameObject>(ParticulesAspiration);
-									lastParticuleAspiration.GetComponent<particleAttractorLinear>().target = this.transform;
-									lastParticuleAspiration.transform.parent = energiseHit.collider.transform;
-									lastParticuleAspiration.transform.position = energiseHit.collider.transform.position;
-									Destroy(lastParticuleAspiration.gameObject,8);
-									energiseTake = true;
-									energiseTakeTimer = 0.8f;
-								}
-								isTackingEnergie = true;
-								energiseHit.rigidbody.velocity -= new Vector3(1,1,1) ;
-								energiseHit.rigidbody.angularVelocity -= new Vector3(1,1,1);
-								if(energiseHit.rigidbody.velocity.x < 0){
-									energiseHit.rigidbody.velocity = new Vector3 (0, energiseHit.rigidbody.velocity.y, energiseHit.rigidbody.velocity.z);
-								}if(energiseHit.rigidbody.velocity.y < 0){
-									energiseHit.rigidbody.velocity = new Vector3 (energiseHit.rigidbody.velocity.x, 0, energiseHit.rigidbody.velocity.z);
-								}if(energiseHit.rigidbody.velocity.z < 0){
-									energiseHit.rigidbody.velocity = new Vector3 (energiseHit.rigidbody.velocity.z, energiseHit.rigidbody.velocity.y, 0);
-								}if(energiseHit.rigidbody.angularVelocity.x < 0){
-									energiseHit.rigidbody.angularVelocity = new Vector3 (0, energiseHit.rigidbody.angularVelocity.y, energiseHit.rigidbody.angularVelocity.z);
-								}if(energiseHit.rigidbody.angularVelocity.y < 0){
-									energiseHit.rigidbody.angularVelocity = new Vector3 (energiseHit.rigidbody.angularVelocity.x, 0, energiseHit.rigidbody.angularVelocity.z);
-								}if(energiseHit.rigidbody.angularVelocity.z < 0){
-									energiseHit.rigidbody.angularVelocity = new Vector3 (energiseHit.rigidbody.angularVelocity.z, energiseHit.rigidbody.angularVelocity.y, 0);
-								}
-								myEnergie += 3;
-							}				
-						}
-					}else{
-						if(Input.GetKeyDown (KeyCode.Joystick1Button4) || Input.GetKeyDown (KeyCode.A)){
-							Gun_Min_Energie_Event.start();
-						}
+						if (energiseTake && ( Input.GetKeyDown (KeyCode.Joystick1Button4) || Input.GetKeyDown (KeyCode.A) )) {
+							float myAddedEnergie = myEnergieMax - myEnergie;
+							if(myAddedEnergie <= energiseHit.rigidbody.velocity.magnitude){
+								myEnergie += myAddedEnergie;
+								energiseHit.rigidbody.velocity = new Vector3(0,0,0);
+							}else{
+								myEnergie += energiseHit.rigidbody.velocity.magnitude;
+								Debug.Log(energiseHit.rigidbody.velocity.magnitude);
+								energiseHit.rigidbody.velocity = new Vector3(0,0,0);
+							}
+							energiseHit.rigidbody.angularVelocity = new Vector3(0,0,0);
+							lastParticuleAspiration.GetComponent<ParticleSystem>().Emit((int)myEnergie/3);
+							lastParticuleAspiration.GetComponent<ParticleSystem>().Stop();
+							Destroy(lastParticuleAspiration.gameObject,2f);
+							isTackingEnergie = false;
+						} else {
+							if(Input.GetKeyDown (KeyCode.Joystick1Button4)|| Input.GetKeyDown (KeyCode.A) || lastPlateformSeen != energiseHit.collider.gameObject){
+								Gun_Absorbe_Energie_Event.start();
+								lastParticuleAspiration = Instantiate<GameObject>(ParticulesAspiration);
+								lastParticuleAspiration.GetComponent<particleAttractorLinear>().target = this.transform;
+								lastParticuleAspiration.transform.parent = energiseHit.collider.transform;
+								lastParticuleAspiration.transform.position = energiseHit.collider.transform.position;
+								Destroy(lastParticuleAspiration.gameObject,8);
+								energiseTake = true;
+								energiseTakeTimer = 0.8f;
+							}
+							isTackingEnergie = true;
+							energiseHit.rigidbody.velocity -= new Vector3(1,1,1) ;
+							energiseHit.rigidbody.angularVelocity -= new Vector3(1,1,1);
+							if(energiseHit.rigidbody.velocity.x < 0){
+								energiseHit.rigidbody.velocity = new Vector3 (0, energiseHit.rigidbody.velocity.y, energiseHit.rigidbody.velocity.z);
+							}if(energiseHit.rigidbody.velocity.y < 0){
+								energiseHit.rigidbody.velocity = new Vector3 (energiseHit.rigidbody.velocity.x, 0, energiseHit.rigidbody.velocity.z);
+							}if(energiseHit.rigidbody.velocity.z < 0){
+								energiseHit.rigidbody.velocity = new Vector3 (energiseHit.rigidbody.velocity.z, energiseHit.rigidbody.velocity.y, 0);
+							}if(energiseHit.rigidbody.angularVelocity.x < 0){
+								energiseHit.rigidbody.angularVelocity = new Vector3 (0, energiseHit.rigidbody.angularVelocity.y, energiseHit.rigidbody.angularVelocity.z);
+							}if(energiseHit.rigidbody.angularVelocity.y < 0){
+								energiseHit.rigidbody.angularVelocity = new Vector3 (energiseHit.rigidbody.angularVelocity.x, 0, energiseHit.rigidbody.angularVelocity.z);
+							}if(energiseHit.rigidbody.angularVelocity.z < 0){
+								energiseHit.rigidbody.angularVelocity = new Vector3 (energiseHit.rigidbody.angularVelocity.z, energiseHit.rigidbody.angularVelocity.y, 0);
+							}
+							myEnergie += 3;
+						}				
+					}
+				}else{
+					if(Input.GetKeyDown (KeyCode.Joystick1Button4) || Input.GetKeyDown (KeyCode.A)){
+						Gun_Min_Energie_Event.start();
+					}
 				}
 			}
 		}
@@ -305,7 +348,7 @@ public class CineticGunV2 : MonoBehaviour {
 			Destroy(lastParticuleAspiration.gameObject,10);
 
 		}
-			
+
 
 		//give
 		float triger1 = Input.GetAxis ("trigger1");
@@ -322,8 +365,8 @@ public class CineticGunV2 : MonoBehaviour {
 						lastParticuleAspirationGive.GetComponent<ParticleSystem>().Stop();
 						Destroy(lastParticuleAspirationGive.gameObject,2.5f);
 						isTackingEnergieGive = false;
-					myBlock.energie += myEnergie;
-					myEnergie = 0;
+						myBlock.energie += myEnergie;
+						myEnergie = 0;
 					} else {
 						if (lastInputTrigger <= 0.09f  || Input.GetKeyDown (KeyCode.E) || lastPlateformSeen != hit.collider.gameObject){
 							Gun_Don_Energie_Event.start();
@@ -342,9 +385,9 @@ public class CineticGunV2 : MonoBehaviour {
 					}
 
 					if (myBlock.energie < 0f) {
-								myBlock.energie = 0f;
-							}
-							myBlock.ApplyTheVelocity();
+						myBlock.energie = 0f;
+					}
+					myBlock.ApplyTheVelocity();
 				}else{
 					if(lastInputTrigger <= 0.09f  || Input.GetKeyDown (KeyCode.E)){
 						Gun_Min_Energie_Event.start();
@@ -368,39 +411,63 @@ public class CineticGunV2 : MonoBehaviour {
 
 		#endregion
 
-
-	
-
-
 		#region Lock
 		// Système de lock
 
-		if (Input.GetMouseButtonDown (2) || Input.GetKeyDown(KeyCode.JoystickButton9) ) {
-				
-				RaycastHit hit; 
-				if (Physics.SphereCast (transform.position,castSize, Camera.main.transform.TransformDirection (Vector3.forward), out hit, Mathf.Infinity, myMask) && hit.collider.GetComponent<BlockAlreadyMovingV2> ()) {
-					Gun_Lock_Event.start();
-					//rb.useGravity = false;
-					blockLock = hit.collider.GetComponent<BlockAlreadyMovingV2> ();
-					blockLockDistanceBase = blockLock.transform.position - transform.position;
-					if (blockLock == null){
-						StartCoroutine("turnLeftUi");
-					}
-				} else if (blockLock != null) {
-					Gun_Unlock_Event.start();
-					blockLock = null;
-					StartCoroutine("turnRightUi");
+		//bool OneObjectFreeze = false;
 
-	//				RaycastHit hit; 
-	//				if (Physics.Raycast (transform.position, Camera.main.transform.TransformDirection (Vector3.forward), out hit, Mathf.Infinity, myMask) &&  hit.collider.GetComponent<BlockAlreadyMovingV2> ()) {
-	//					blockLock = hit.collider.GetComponent<BlockAlreadyMovingV2> ();
-	//				}
+		//Gun_Lock_Event.start ();
+		//FMODUnity.RuntimeManager.PlayOneShot ("Gun_Lock_Event", gameObject.transform.position);
+
+
+		//Ici, le but est de mettre un objet en enfant du RigidbodyPrefab
+
+		if (Input.GetMouseButton (2) || Input.GetKey(KeyCode.JoystickButton9) ) 
+		{
+			RaycastHit hit; 
+			if (Physics.SphereCast (transform.position,castSize, 
+				Camera.main.transform.TransformDirection (Vector3.forward), out hit, 
+				Mathf.Infinity, myMask) && hit.collider.GetComponent<BlockAlreadyMovingV2> () 
+				&& !ObjectFreezed )
+			{
+
+				ObjectFreezed = true;
+				if (ObjectFreezed)
+				{
+				Debug.Log ("récupère moi qu'une fois");
+			
+				FreezedBlock = hit.collider.GetComponent<BlockAlreadyMovingV2> ();
+				FreezedBlock.GetComponent<BlockAlreadyMovingV2>().enabled = false;
+				FreezedBlock.rb.velocity = new Vector3 (0,0,0);
+				FreezedBlock.energie = 0;
+				//FreezedBlock = null;
+								
+				FreezedBlock = hit.collider.GetComponent<BlockAlreadyMovingV2> ();
+				StartCoroutine (Enfant (FreezedBlock));
+
+					// Les deux coroutines sont à la fin du code
+
+				}
+					//OneObjectFreeze = true;
 			}
 		}
+		if (Input.GetMouseButtonUp (2) || Input.GetKeyUp (KeyCode.JoystickButton9) ) 
+		{				
+				StartCoroutine (StopEnfant (FreezedBlock));
+				FreezedBlock.GetComponent<BlockAlreadyMovingV2>().enabled = true;
+				FreezedBlock.rb.velocity = new Vector3 (0,0,0);
+				
+				//OneObjectFreeze = false;
+				ObjectFreezed = false;
+			Debug.Log ("tu peux me récupérer");
+		}
+
 		#endregion
 	}
 
-	void OnCollisionEnter(){
+	/*
+	void OnCollisionEnter()
+	{
 		delock ();
 	}
 
@@ -426,20 +493,75 @@ public class CineticGunV2 : MonoBehaviour {
 			yield return new WaitForEndOfFrame ();
 		}
 		yield return null;
-	}
+	}*/
 
-	//step += Time.deltaTime;
+
 
 	IEnumerator StepMovement (BlockAlreadyMovingV2 CeBloc)
 	{
 		Vector3 ActualPosition = transform.position;
 		step = 0;
 
-		while (Vector3.Distance(CeBloc.transform.position, ActualPosition) > 8f) 
+		while (Vector3.Distance(CeBloc.transform.position, ActualPosition) > (3f + CeBloc.transform.localScale.x))
 		{
 			step += Time.deltaTime;
 			CeBloc.transform.position = Vector3.MoveTowards (CeBloc.transform.position, transform.position, step);
 			yield return null;
 		}
+
+		if (CeBloc.energie <= (3f + CeBloc.transform.localScale.x))
+			{
+				CeBloc.ApplyTheVelocity ();
+				CeBloc.energie = 0;
+			}
+
+
 	}
+
+	IEnumerator recharge (float bob)
+	{
+		float speed = 1;
+		bob += Time.deltaTime * speed;
+		bool Rechargement = true;
+			
+		if (Rechargement) 
+		{
+			myEnergie = bob;
+		}
+			
+		if (bob >= myEnergieMax)
+		{
+			Rechargement = false;
+			bob = 0;
+
+		}
+		yield return new WaitForSeconds (0.1f);
+	}
+
+
+	IEnumerator Ralentissement (BlockAlreadyMovingV2 CeBloc)
+	{
+		float speed = 200;
+		CeBloc.energie -= Time.deltaTime * speed;
+		//CeBloc.ApplyTheVelocity ();
+		if (CeBloc.energie == 0) {
+			CeBloc.NoVelocity ();
+		}
+		yield return new WaitForSeconds (0.1f);
+	}
+
+	IEnumerator Enfant (BlockAlreadyMovingV2 CeBloc)
+	{
+		CeBloc.transform.parent = this.transform;
+		yield return new WaitForSeconds (0.1f);
+
+	}
+	IEnumerator StopEnfant (BlockAlreadyMovingV2 CeBloc)
+	{
+		Debug.Log ("Pourtant je rentre bien là");
+		CeBloc.transform.parent = null;
+		yield return new WaitForSeconds (0.1f);
+	}
+
+
 }
