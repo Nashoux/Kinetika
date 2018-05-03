@@ -78,7 +78,9 @@ public void ApplyTheVelocity(){
 
 	void OnCollisionExit(Collision col){
 		if (col.gameObject.tag == "destructible"){
+			if(col.gameObject.GetComponent<Rigidbody>()){
 				col.gameObject.GetComponent<Rigidbody> ().mass = 100000;
+			}
 		}	
 	}
 

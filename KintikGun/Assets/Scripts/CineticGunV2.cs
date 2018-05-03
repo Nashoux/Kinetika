@@ -429,37 +429,39 @@ public class CineticGunV2 : MonoBehaviour {
 				Camera.main.transform.TransformDirection (Vector3.forward), out hit, 
 				Mathf.Infinity, myMask) && hit.collider.GetComponent<BlockAlreadyMovingV2> () 
 				&& !ObjectFreezed )
-			{
-
+			{				
 				ObjectFreezed = true;
-				if (ObjectFreezed)
-				{
+				FreezedBlock = hit.collider.GetComponent<BlockAlreadyMovingV2> ();
+				FreezedBlock.transform.position = new Vector3(FreezedBlock.transform.position.x, FreezedBlock.transform.position.y +0.1f,FreezedBlock.transform.position.z);
+
 				Debug.Log ("récupère moi qu'une fois");
 			
-				FreezedBlock = hit.collider.GetComponent<BlockAlreadyMovingV2> ();
-				FreezedBlock.GetComponent<BlockAlreadyMovingV2>().enabled = false;
 				FreezedBlock.rb.velocity = new Vector3 (0,0,0);
 				FreezedBlock.energie = 0;
+				FreezedBlock.enabled = false;
 				//FreezedBlock = null;
 								
-				FreezedBlock = hit.collider.GetComponent<BlockAlreadyMovingV2> ();
-				StartCoroutine (Enfant (FreezedBlock));
-
-					// Les deux coroutines sont à la fin du code
-
-				}
+				DestroyImmediate(FreezedBlock.GetComponent<Rigidbody>());
+				FreezedBlock.transform.parent = this.transform.GetChild(0).transform;
+				
 					//OneObjectFreeze = true;
 			}
 		}
 		if (Input.GetMouseButtonUp (2) || Input.GetKeyUp (KeyCode.JoystickButton9) ) 
-		{				
-				StartCoroutine (StopEnfant (FreezedBlock));
-				FreezedBlock.GetComponent<BlockAlreadyMovingV2>().enabled = true;
+		{		
+			if(ObjectFreezed){
+				FreezedBlock.enabled = true;
+
+				FreezedBlock.transform.parent = null;				
+				FreezedBlock.rb = FreezedBlock.gameObject.AddComponent<Rigidbody> () ;
+				Debug.Log(FreezedBlock.GetComponent<Rigidbody>());
+				FreezedBlock.GetComponent<Rigidbody>().useGravity = true;
 				FreezedBlock.rb.velocity = new Vector3 (0,0,0);
 				
 				//OneObjectFreeze = false;
 				ObjectFreezed = false;
-			Debug.Log ("tu peux me récupérer");
+				Debug.Log ("tu peux me récupérer");
+			}
 		}
 
 		#endregion
@@ -545,23 +547,13 @@ public class CineticGunV2 : MonoBehaviour {
 		CeBloc.energie -= Time.deltaTime * speed;
 		//CeBloc.ApplyTheVelocity ();
 		if (CeBloc.energie == 0) {
-			CeBloc.NoVelocity ();
+			CeBloc.ApplyTheVelocity ();
 		}
 		yield return new WaitForSeconds (0.1f);
 	}
 
-	IEnumerator Enfant (BlockAlreadyMovingV2 CeBloc)
-	{
-		CeBloc.transform.parent = this.transform;
-		yield return new WaitForSeconds (0.1f);
-
-	}
-	IEnumerator StopEnfant (BlockAlreadyMovingV2 CeBloc)
-	{
-		Debug.Log ("Pourtant je rentre bien là");
-		CeBloc.transform.parent = null;
-		yield return new WaitForSeconds (0.1f);
-	}
+	
+	
 
 
 }
