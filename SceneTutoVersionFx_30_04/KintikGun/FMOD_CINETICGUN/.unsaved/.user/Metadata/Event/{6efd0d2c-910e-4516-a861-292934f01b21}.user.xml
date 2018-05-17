@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="Event" id="{6efd0d2c-910e-4516-a861-292934f01b21}">
+        <relationship name="selectables">
+            <destination>{f9fcd87b-0e9b-4a97-b415-d931a068455b}</destination>
+        </relationship>
+        <relationship name="uiLastParameterSelection">
+            <destination>{3d0ac180-acaf-42f0-a570-4d53d93307fe}</destination>
+        </relationship>
+    </object>
+    <object class="MasterTrack" id="{ffc827c6-ac7e-4f72-b0c5-d3bf07117ffa}"/>
+    <object class="MixerInput" id="{75c6ec73-bfef-4d1b-882b-6d91d1863473}"/>
+    <object class="EventAutomatableProperties" id="{6188155e-b3bc-430b-845d-16cb545fff1e}"/>
+    <object class="MarkerTrack" id="{df7491ce-917b-4b5c-ba74-9c5f0eede5c3}"/>
+    <object class="GroupTrack" id="{53ad5134-796e-4231-8365-0bcc23c0d4f6}"/>
+    <object class="GroupTrack" id="{96d4f89c-487f-4b21-ade5-c3b0607732bd}"/>
+    <object class="GroupTrack" id="{dbbe1d5c-07c9-4204-81f9-1144803fa807}"/>
+    <object class="Timeline" id="{3d0ac180-acaf-42f0-a570-4d53d93307fe}">
+        <property name="uiLastRulerScaleRatio">
+            <value>0.0067738498821162006</value>
+        </property>
+    </object>
+    <object class="ParameterProxy" id="{83977800-a01b-480b-b6f7-d332109ea330}">
+        <property name="uiLastRulerScaleRatio">
+            <value>0.00082034454470877774</value>
+        </property>
+    </object>
+    <object class="EventMixerMaster" id="{7b6042d1-d758-4531-b1dc-43084b2d6106}">
+        <relationship name="input">
+            <destination>{4a88f397-45d2-4415-8192-337336c07c80}</destination>
+            <destination>{e5eb7916-c223-452f-a0d5-1534f74e9b7e}</destination>
+            <destination>{dc48dc4c-67a8-4d49-8a0c-4b88dce76c0e}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{47bb5a0f-32b8-4059-b5f9-beb0a542e3ea}"/>
+    <object class="MixerBusPanner" id="{ee752b97-f58f-46bc-ab8d-d55d2d97954e}"/>
+    <object class="SingleSound" id="{ab780c65-bb28-4a56-98ca-d88e8d852536}"/>
+    <object class="EventMixerGroup" id="{4a88f397-45d2-4415-8192-337336c07c80}"/>
+    <object class="SingleSound" id="{290f7c45-ff99-4623-9389-3b74bd593cb7}"/>
+    <object class="EventMixerGroup" id="{e5eb7916-c223-452f-a0d5-1534f74e9b7e}"/>
+    <object class="AutomationTrack" id="{2cd04cea-b5b7-4d6e-8d7e-60fdb7f9d8fa}"/>
+    <object class="AutomationTrack" id="{e655da06-f07a-4b6f-911d-f12814403e56}"/>
+    <object class="AutomationTrack" id="{bea89185-b17a-40eb-9022-feacbaf3c41a}"/>
+    <object class="SingleSound" id="{8ce9cd97-fbb8-430f-9317-483c5f994ec3}"/>
+    <object class="EventMixerGroup" id="{dc48dc4c-67a8-4d49-8a0c-4b88dce76c0e}"/>
+    <object class="LoopRegion" id="{f9fcd87b-0e9b-4a97-b415-d931a068455b}"/>
+    <object class="MixerBusEffectChain" id="{b33f0163-6e27-4f74-aca2-c9d302e3aa5b}"/>
+    <object class="MixerBusPanner" id="{5fa3862a-db4b-4a2b-a5c6-53c29fcc4aae}"/>
+    <object class="MixerBusFader" id="{ec74fd2f-3a83-4dd7-af04-c59f6b18df0e}"/>
+    <object class="RandomizerModulator" id="{abf0288d-8f63-47c5-aa95-d94cbede65c5}"/>
+    <object class="MixerBusEffectChain" id="{cd6caab6-d4f7-42a8-9ff5-582984ee1b04}"/>
+    <object class="MixerBusPanner" id="{3d994af1-b5ab-463f-9570-e605db586c0a}"/>
+    <object class="MixerBusEffectChain" id="{a457ed9b-e3ac-4cfb-b2cf-70a5a66becc3}"/>
+    <object class="MixerBusPanner" id="{865d3090-114b-4b83-b8c1-4579f2269313}"/>
+    <object class="MixerBusEffectChain" id="{177235df-6e9e-489b-8b50-f03137f6f2d7}"/>
+    <object class="MixerBusPanner" id="{d9b8825f-07e0-4a17-833f-2c459e6f90fd}"/>
+    <object class="MixerBusFader" id="{e3a52059-971b-4a81-bdf8-005734b6163c}"/>
+    <object class="MixerBusFader" id="{ca9dc13e-1b77-4f21-9c97-1c9e3142be84}"/>
+    <object class="MixerBusFader" id="{2870162d-ea8e-4e69-9800-a1ed3135b268}"/>
+    <object class="MixerBusFader" id="{3fabc186-b909-403e-bfa1-229686315122}"/>
+    <object class="ThreeEQEffect" id="{e40f5004-bbf5-4b77-98ca-99615ca1ebbb}"/>
+</objects>

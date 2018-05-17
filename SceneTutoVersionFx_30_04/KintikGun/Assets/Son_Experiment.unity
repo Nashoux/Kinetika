@@ -1,0 +1,4266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 8
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 9
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFiltering: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousColorSigma: 1
+    m_PVRFilteringAtrousNormalSigma: 1
+    m_PVRFilteringAtrousPositionSigma: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &23073256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 23073261}
+  - component: {fileID: 23073260}
+  - component: {fileID: 23073259}
+  - component: {fileID: 23073258}
+  - component: {fileID: 23073257}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &23073257
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23073256}
+  m_Enabled: 1
+--- !u!124 &23073258
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23073256}
+  m_Enabled: 1
+--- !u!92 &23073259
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23073256}
+  m_Enabled: 1
+--- !u!20 &23073260
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23073256}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!4 &23073261
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23073256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &929206219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 929206223}
+  - component: {fileID: 929206222}
+  - component: {fileID: 929206221}
+  - component: {fileID: 929206220}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &929206220
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929206219}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 57595ba288ce1eb408b096e82319a537, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &929206221
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929206219}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &929206222
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929206219}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &929206223
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929206219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.04, y: 0, z: -30.2}
+  m_LocalScale: {x: 12.473905, y: 15.189072, z: 20.14829}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &988149393
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4579035662919698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579035662919698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 10.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579035662919698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 33.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579035662919698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579035662919698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.12793349
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579035662919698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579035662919698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9917828
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579035662919698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579035662919698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 14.700001
+      objectReference: {fileID: 0}
+    - target: {fileID: 114307691088358700, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114012163336779448, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114549152418550586, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114151532669389542, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114905620100054984, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114858959504317504, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114219377504308996, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114687411507412942, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061414447442204, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114113825328623484, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114316205719695986, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114521527342932674, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114672360520939626, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651095703832452, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295713557245120, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114645399683911952, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114543769331925190, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075864254336684, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114029735013105866, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114297826229883140, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114530081492677462, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270335067214356, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114106961953944210, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114290843007443082, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114995876200589982, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114089260503141906, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114037893473090214, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114642978938784714, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114115245839833822, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114924850427818260, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114110451413334416, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114338729271305918, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114694706213907164, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114765100235241722, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114049043850785406, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114767797030024108, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114766166256126578, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114442624959073268, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114999642353238072, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114466400519081530, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114487864160767742, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114371109266898514, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114976512304053794, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114157389063951864, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114614357522533306, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114186072202205816, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922052505685322, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937406803883002, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771859218107124, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114522415423038640, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114734167269795550, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114602245517654106, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114958638073078704, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114780079613454632, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114311031096081118, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114136078969912750, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114498223215718600, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223953154643508, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114662409586856110, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114589042026411134, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114249488943611490, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114071863069192190, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114713431455617416, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114059306146023970, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114503286841359580, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114296988365655212, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114332695294868192, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114940578229202896, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114774037879769184, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114099965132957722, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114337697838584388, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114852358246142614, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114206945109550236, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114532496482971314, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114870607119194876, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114240151723364044, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114912238796263442, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114903105180393354, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867343763267154, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114265418772443810, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114719629275054042, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114196462742681966, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537880138624730, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114858586864582438, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114272257914896430, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114143317388841658, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418011448951570, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114038560337922714, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114529643542324450, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618567328802698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114680570821276426, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114878637633026804, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160198115273068, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114524137978304264, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114096546454762816, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114991762841911708, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114819230088366216, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114675680688789010, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114170648833103276, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114264992612503728, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114093399953941712, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418634639809858, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114612809129792224, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114588396805030744, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114939288037931206, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114831185678153808, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114079073386252642, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114116929816075796, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887490250499406, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114932860831836762, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114145645474562022, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114585003036407120, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114243464442913016, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114895422441770072, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114559103716911534, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114959674565865904, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114629217098642404, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114620163467403058, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114455371176039834, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114355443488383338, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114273998773940276, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114608518507048072, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114857687327338366, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114247676040494334, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078528159289138, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114676796737912068, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114837226740750616, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613734007748692, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114775636926808058, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114213646378651650, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114515956744483138, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114509140592910888, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114544035980717696, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114297497714629046, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114126447606543392, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114097721573352832, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114158732072701270, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065557625256642, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172523548924766, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114323659715106658, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114656093780994226, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114346007008707288, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114055667172982806, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114478162646321274, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114589865622107416, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114138707250094808, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114266498014100868, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867079368792426, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114656762526909668, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114805381177559584, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554656718757720, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114828218422236384, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114883421334019258, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114185968322125724, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114612761955843778, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114542535014214946, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114297117185381102, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114556565501622750, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114925556244581736, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365138564671548, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114073510717441016, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114500036202281756, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114206485140103204, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114862152304913234, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114994197696728762, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184466408226530, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114157505372756312, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114536031304424710, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114874612356159608, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114724146729437190, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887556398590810, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114302715277926226, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173098006890608, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114981078803054168, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114055782783810734, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114068497859827576, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114975237947647854, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114089898907532938, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114945065540186600, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463303466680566, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114435537964597540, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773884180119830, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114203622502131378, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114300334717593300, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114807176949873288, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114999199647110934, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114266623035164736, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114217900814601852, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114646946181790464, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114748579016679900, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114821454209179622, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114576020173962670, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114975049663231834, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114932817434213750, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094296988492212, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114344222832094238, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114218628310073642, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114424580847275472, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114170923755661292, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114385912764640278, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061052882317012, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114597983712039610, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114338614839948878, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114298073066042720, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114653874092577980, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114411199355271314, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114874719784422638, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114841627058833512, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114862403928413686, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114750775214921136, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114127753865439638, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114662738568924526, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230715663609552, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114852786076537714, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107741310507780, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114094396227112372, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114189645978073852, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114068467440158124, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114220888537915110, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114475310327488270, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114539484420068216, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114262094532495814, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114410348227634574, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114583116994931088, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114456996031222382, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114441217200437236, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114125558628132064, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114527237097680782, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114678238077454664, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114039408390190618, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114988563738468304, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114102663383205106, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778708873095598, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644356574266158, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114973118995822216, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114190058897417980, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114359890491611728, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114409953775849254, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114389010050377140, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114445027410055760, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577902663763220, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114127529624096612, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446099554598518, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114532963714288668, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114161985062811520, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114943000310346036, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114511316035069254, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114503562515233548, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114580238581005360, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114639121934209172, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114039893245335306, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114774095881562962, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114958400991724506, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497358589236062, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114717319150763368, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114128649538643700, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114302322773268322, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114655504809934610, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114869307282073010, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114750196087455200, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114854363100709876, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114356751398614944, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525431195351688, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114103109637940714, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726995900011922, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114860484806964500, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114634485170916578, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114285773793847378, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114346224721393140, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114699146073830536, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114124809630028962, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114997528378777922, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114237903321095276, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114716352308195234, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114537369441542920, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114673288966801776, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114197852009348542, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114878216291699894, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005043965807594, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114884327528285778, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114320740566665524, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114585082246908074, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114307402602479454, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114605396535391200, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114481995901420970, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114840815634941178, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114131504004690802, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114285287327283348, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114700158725814690, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114503801227400504, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114493513525665658, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114581532830247698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114069591566744546, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114695494182898046, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114146703074805822, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114630381042944838, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114297712455958606, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114661971383915016, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114308733231988848, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937578881132140, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225164810890016, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799700496880454, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114659300022049302, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114064697672654594, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114530881139302184, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114141687734551926, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114738664223296524, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114550201852777916, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114999269681576030, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114453664599624582, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114417031394694392, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114201829500168594, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114745209878414104, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114953089091730332, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114025446988475242, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114265920430409348, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867700218088978, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114145350500352236, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114207191827082840, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114325534065092998, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586918698705970, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114936289972068728, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867236167952220, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114135970533681998, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114941644055428372, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114840822515512236, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557287526771078, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114253269652778484, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114902534591276452, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114216557684028508, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956346105809564, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114603824888086910, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114593717308998842, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184246858502490, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114728537937986120, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114437638152248768, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114252252980541176, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114428440831442346, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114705598456311830, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150097047529444, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114688602151723532, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114737383679919090, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114572887366094112, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114206734597101884, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114356557723351718, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114622981272451706, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114583259323624174, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114484902766237016, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114705702725535238, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114727438771678878, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114901919589918866, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114271332389666744, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114784276430764396, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114491948752422722, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114121614405964230, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114444648335273682, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114472096295927242, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114627698601018072, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114947249634601330, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474819141700584, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114097939672512408, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525513095975674, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114440718030291494, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651422348711336, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114494312865683588, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114387492933880746, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377640509249916, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114888655473824746, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114024688522005420, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114670086852525732, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114894646548091208, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114233682079800520, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114132061830294820, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114237953009327172, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114212426152167576, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770673351523752, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114272507595074238, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114788065793232494, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114406376739693648, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114742672151879308, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625805603988974, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998043216045444, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114353591091670028, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114866471837958676, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114298899310779674, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114676448350344092, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114559166205784034, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114382312147452326, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114840957303467506, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114042424684815504, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173554280897090, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107003548431980, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114886745897701440, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114596467262129708, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114144554150728342, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114936736026069872, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114377221922315542, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114371526673934884, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114688227929195748, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114284362663208466, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114183215224050960, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114342346904213202, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114088764233000900, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114863013950974270, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114117083459653944, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114532877540728950, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114672241269777312, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114310379097863794, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114513109787832024, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114248739801680764, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114702060886304652, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114667283578366716, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114852078832228110, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114520113359012642, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075036947269742, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114442180998290442, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114839176606808798, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114049387157394688, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114638891163220474, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114081290526797046, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114881448517161568, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114649147973891294, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114347669057839654, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114391350111584596, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114110912978940114, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114298870258362900, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114883246023863368, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114066296033098906, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114499867123871420, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114413679434605716, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114086559511912820, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929109355691648, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114546379807356312, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114755030392763270, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114291760639789290, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114450139014831084, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114282735899016378, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114698508829036626, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114334581069330032, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114164994752558672, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114973323315522174, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922854496205828, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114916345689619322, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882093710396496, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263671002563974, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030719502709076, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577754639896004, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114409612455368988, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114096481552636702, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114971355767065802, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114748064663757662, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114174761493602130, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114259299369627654, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114151981325454520, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114191118467009840, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114614295502954348, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114086404447980690, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114224106476440434, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114506287448509118, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173034438112436, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114605136610628324, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114244986730994794, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114357143540358188, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114227209157810394, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114992961219399388, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114889453401724616, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114752051432619606, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517923302468722, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114169589274078974, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293954509550026, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114190758178432876, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114158738197616338, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114694091576146150, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114330518307227670, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114023113116395884, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383125790086800, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114248250470986642, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114717875247777800, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114967048844256826, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114516310502803104, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114851353252459084, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114989246224625758, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114450322778201442, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114950648784656332, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114213483059444906, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114050726307637158, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114224859301676458, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114798928520979160, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114049847831093038, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114734210055022366, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657186348128142, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114701575792713316, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114511270160964118, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182031526607142, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114255261437765252, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960292144385506, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114636273986188832, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114207316344826632, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922735353179516, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114700571543486296, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114164350497439062, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114562114064785826, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114204033539138200, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114446778345880346, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114521680661479252, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114829194110872810, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114406470858106204, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114483936559973222, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557117418734752, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199214489418240, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114991591549432746, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114641425676056852, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114240247385922166, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403910391958096, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114496729965133636, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114326768730905722, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795026219007060, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114849459378426392, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114612267695536378, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230217683527738, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929535794813988, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114610432197158254, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114772469998923962, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114002664614404514, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114826299995485636, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114444075704585630, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114268888062149880, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114481542208966868, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114336413543175846, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114723874657266962, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114271223592681566, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557806964435024, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114676659517713028, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114976410101406036, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114493201652768948, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114335338187272386, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114069518851249806, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114020795809542890, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114273002117107558, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114140861487719084, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114231752500716084, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114895542942955916, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114708343384958352, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922657681774606, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114606844346374706, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114037349352310820, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114378415038758222, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114580562917968590, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114103925194396748, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114974907250323364, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867049786479076, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365094003481732, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633472355075572, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114384274148572384, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114406787404748436, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114141328438237896, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114335950260267202, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114559053397273916, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114588378357603282, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114308249816097368, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114104430008461444, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114413243112526874, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114635130870455704, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114259501650953418, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114026074429562106, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214589484859398, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114898660039925348, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114097778734902466, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114099841707590702, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114958863293690560, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911382476588590, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114560265931015144, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613501867360298, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114976392062245872, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114964630781798662, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114162232749692012, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114714880430474992, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403870981853556, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114515971095925776, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114868253505252104, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114421696897305034, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114586007904702026, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657638411296382, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114578282677989486, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551188722388116, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114136016813267636, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114776489994275656, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114664485096710200, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114649615750112676, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114760052553039932, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184206520760064, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114851530275928672, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625787104270894, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114989010464239166, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114518346660037088, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114073027819763252, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114068471840289954, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114451762790808920, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795721893000730, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114278323919544328, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114313388005197448, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114854359267175576, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114467846461758978, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557812043591040, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114743812805596698, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114194391481371214, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114312236047006134, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114198834605444142, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114259614010093068, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114213047555826768, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114061657308022476, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114673159948358118, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114448197408939064, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114867188058627958, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114895275654466586, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114742295478459502, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114281335628789442, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114639280988684002, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114500795001540806, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114573976102131666, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114027464870406052, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114468953785290596, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114650298822045394, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114281352222420150, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199167030735440, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114465555370637786, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114330157426241358, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114026073067189318, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114845891861255898, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114749957629383494, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114183480795681970, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114239644942472648, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114615752606206246, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114143415364222350, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114655294977178352, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114280423912486352, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114151959064343122, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114687213370458406, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551351793613390, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114203505749787626, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114236821468249896, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114925765044333174, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114238865810099280, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114500611088521360, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114652790993594912, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114575359091926586, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114930408236474452, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114691888332313754, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114974551096429724, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114627708102360226, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114705962488986152, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114380179618549700, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114371282281232382, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114178530105541644, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114062534705203628, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114569221818055564, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114074874711669568, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114281216857578550, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114313401468892120, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114524845218803674, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114616328202699074, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114044388949540200, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859748424221042, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065947997712672, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114043132835923718, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234827376240406, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114524226865832284, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747037798412648, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114801586167831392, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114535757894422688, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114524335197874148, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114073278814617766, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114041494909520156, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114898105491970812, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114920402018448718, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030948202782488, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114628295344502450, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577818775558770, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114273360530290968, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114220733281273268, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119061175085928, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083825098113206, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666734263832894, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114045687456325938, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114945503396846840, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114048596776238804, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114409001542327468, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785238603753138, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830031509433146, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114180342926691594, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114185545121433540, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114551297528209828, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114503948223862350, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114590835347041008, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114780254694698462, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114573028626344742, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114247254176152646, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114919706787512510, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114929271901784872, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114868853097682570, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651555679195510, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114017201931758372, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998148230132708, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114025346422526792, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114059658555793014, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114433607794057194, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114563396790839562, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403056750539202, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114338305031368770, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114430500155076316, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114805648257022100, guid: 3c06b6f916ad2af42bf90d0de8a1f21d,
+        type: 2}
+      propertyPath: destructionSound
+      value: event:/DestructionEtrange
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3c06b6f916ad2af42bf90d0de8a1f21d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &991488093
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -16.845934
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.6374781
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.0020527933
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.002669106
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.008052077
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999619
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566439457394798, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_TagString
+      value: objetMobile
+      objectReference: {fileID: 0}
+    - target: {fileID: 114163433895294464, guid: 57438e29eb21a5046bc9fb668a8c2a9a,
+        type: 2}
+      propertyPath: energie
+      value: 2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 6.234498
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 6.2344995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481691305767930, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 6.2345057
+      objectReference: {fileID: 0}
+    - target: {fileID: 54639519169187866, guid: 57438e29eb21a5046bc9fb668a8c2a9a,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1e+9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114163433895294464, guid: 57438e29eb21a5046bc9fb668a8c2a9a,
+        type: 2}
+      propertyPath: maxEnergie
+      value: 100
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 57438e29eb21a5046bc9fb668a8c2a9a, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1190473119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1190473124}
+  - component: {fileID: 1190473123}
+  - component: {fileID: 1190473122}
+  - component: {fileID: 1190473121}
+  - component: {fileID: 1190473120}
+  m_Layer: 2
+  m_Name: SoundCollider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1190473120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190473119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d56ecee8e83d3b4aad93bdcbfcb265d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionSound: event:/DestructionEtrange
+--- !u!23 &1190473121
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190473119}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1190473122
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190473119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 39.513023, y: 1.8669281, z: 17.429466}
+  m_Center: {x: 1.2926979, y: -7.6171913, z: -1.342032}
+--- !u!33 &1190473123
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190473119}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1190473124
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1190473119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.58, y: 8.31, z: 4.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1285074356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1285074360}
+  - component: {fileID: 1285074359}
+  - component: {fileID: 1285074358}
+  - component: {fileID: 1285074357}
+  - component: {fileID: 1285074361}
+  m_Layer: 0
+  m_Name: SoundCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1285074357
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285074356}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1285074358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285074356}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 39.513023, y: 26.039978, z: 10.393045}
+  m_Center: {x: 1.2926979, y: 2.4183578, z: -0.8300295}
+--- !u!33 &1285074359
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285074356}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1285074360
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285074356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.58, y: 10.667969, z: 19.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1285074361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285074356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d56ecee8e83d3b4aad93bdcbfcb265d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionSound: event:/DestructionEtrange
+--- !u!1001 &1639184540
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -8.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326757068907640, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4722501777198690, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4722501777198690, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -14.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4722501777198690, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fab95eab59cac0d44a5cf087b15fdd12, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1846384204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1846384206}
+  - component: {fileID: 1846384205}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1846384205
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846384204}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1846384206
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846384204}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}

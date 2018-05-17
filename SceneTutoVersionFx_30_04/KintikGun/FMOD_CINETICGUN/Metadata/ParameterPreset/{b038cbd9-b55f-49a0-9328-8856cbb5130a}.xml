@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{b038cbd9-b55f-49a0-9328-8856cbb5130a}">
+        <property name="name">
+            <value>CoefDestruction</value>
+        </property>
+        <relationship name="folder">
+            <destination>{e712e32f-443e-0032-2326-3a3d99ecbb74}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{79bec5a6-473e-401b-8857-84b688e26e5f}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{79bec5a6-473e-401b-8857-84b688e26e5f}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
