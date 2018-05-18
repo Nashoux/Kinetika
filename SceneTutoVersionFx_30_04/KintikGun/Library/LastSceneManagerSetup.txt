@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene_Trailer.unity
+- path: Assets/Son_Experiment.unity
   isLoaded: 1
   isActive: 1

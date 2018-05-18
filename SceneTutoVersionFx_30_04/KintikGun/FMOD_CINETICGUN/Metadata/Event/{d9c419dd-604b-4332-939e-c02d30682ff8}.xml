@@ -182,7 +182,7 @@
     </object>
     <object class="SingleSound" id="{b0063b04-f8dd-44bf-8dfe-979ba1bdb04a}">
         <property name="length">
-            <value>3.0758956916099773</value>
+            <value>2.6500000000000004</value>
         </property>
         <property name="timelockedOffset">
             <value>0.25</value>
@@ -193,7 +193,7 @@
     </object>
     <object class="EventMixerGroup" id="{da0793ef-2b5b-4fc2-a517-29a3d0fc4142}">
         <property name="volume">
-            <value>-17.5</value>
+            <value>-23.5</value>
         </property>
         <property name="name">
             <value>Audio 3</value>
@@ -210,7 +210,7 @@
     </object>
     <object class="SingleSound" id="{55c13d71-f95c-4edb-ad6c-391fb59978d8}">
         <property name="length">
-            <value>3.3749999999999991</value>
+            <value>2.6500000000000004</value>
         </property>
         <property name="timelockedOffset">
             <value>0.375</value>
@@ -227,7 +227,7 @@
     </object>
     <object class="EventMixerGroup" id="{2069e8b3-2d92-46e1-a086-6cc1dbfecd9b}">
         <property name="volume">
-            <value>-17</value>
+            <value>-4</value>
         </property>
         <property name="name">
             <value>Audio 4</value>
@@ -306,7 +306,7 @@
     </object>
     <object class="AutomationPoint" id="{7b54bdd4-2be5-4f7c-9c7d-2b15426a8ccd}">
         <property name="position">
-            <value>1</value>
+            <value>0.95000000000000007</value>
         </property>
         <property name="value">
             <value>1</value>
@@ -314,7 +314,7 @@
     </object>
     <object class="AutomationPoint" id="{b3ee779c-6dbf-4a00-9bc6-24e5a3740b9c}">
         <property name="position">
-            <value>1.2499999999999991</value>
+            <value>0.70000000000000018</value>
         </property>
         <property name="value">
             <value>1</value>
@@ -325,7 +325,7 @@
     </object>
     <object class="AutomationPoint" id="{a8302103-d9c5-494a-a725-c31dea979977}">
         <property name="position">
-            <value>3.375</value>
+            <value>2.6500000000000004</value>
         </property>
         <property name="value">
             <value>0</value>

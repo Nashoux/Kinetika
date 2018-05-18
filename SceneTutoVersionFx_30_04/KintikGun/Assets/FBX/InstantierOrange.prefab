@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 54403685170387850}
   - component: {fileID: 65786496261835510}
   - component: {fileID: 64478621218252378}
-  - component: {fileID: 114130527189295218}
+  - component: {fileID: 114976491987277752}
   m_Layer: 0
   m_Name: InstantierOrange
   m_TagString: Untagged
@@ -125,7 +125,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3918188, y: 2.47835, z: 4.7605762}
   m_Center: {x: -0.032503206, y: -0.14779735, z: 2.2749343}
---- !u!114 &114130527189295218
+--- !u!114 &114976491987277752
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1413907857300568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40ac215fa8145904383474594ba4474c, type: 3}
+  m_Script: {fileID: 11500000, guid: 86f83629e8539ef438ba8e2811cb5369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetMobile: {fileID: 1566439457394798, guid: 57438e29eb21a5046bc9fb668a8c2a9a,

@@ -14,7 +14,7 @@ public class SoundDestruction : MonoBehaviour {
 	void Start ()
 	{
 		destructionSound_event = FMODUnity.RuntimeManager.CreateInstance (destructionSound);
-		destructionSound_event.start ();
+		//destructionSound_event.start ();
 		
 	}
 	
@@ -30,11 +30,15 @@ public class SoundDestruction : MonoBehaviour {
 
 	void OnTriggerEnter (Collider col)
 	{
-		if (col.gameObject.tag == "destructible") 
+		if (col.gameObject.tag == "objetMobile") 
 		{
+			Debug.Log ("Yolooooooo");
+			FMODUnity.RuntimeManager.PlayOneShot ("event:/DestructionEtrange", gameObject.transform.position);
+			//destructionSound_event.start ();
+			/*
 			OneObjectDown += 0.05f;
 			destructionSound_event.setParameterValue ("CoefDestruction", OneObjectDown);
-
+*/
 			//destructionSound_event.GetPa ("CoefDestruction", 1);
 		}
 	}
